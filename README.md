@@ -1,6 +1,8 @@
 # MindNight Board
 
 **Project Description**: MindNight Board is a board for the game mindnight where it helps you use the possibilities triangle (by Philliedips), to keep track on you information.
+- You don't know the possibilities triangle ?
+[learn here.](https://www.youtube.com/watch?v=VNBNuD1yv9I)
 
 ## Table of Contents
 - [Installation](#installation)
@@ -20,8 +22,8 @@
 
 ## Screenshots
 
-![](https://ibb.co/FKtQ6f9)
-![](https://ibb.co/TkKTbcm)
+![Home](https://ibb.co/FKtQ6f9](https://i.ibb.co/47xbWDc/Screenshot-2024-03-07-161612.png))
+![Board](https://ibb.co/TkKTbcm](https://i.ibb.co/Qf8cC9r/Screenshot-2024-03-07-161702.png))
 
 ## License
 
