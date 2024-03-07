@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://ulh5xljie5ev"]
+
+[ext_resource type="Theme" uid="uid://b05l8sqvhvpu7" path="res://junk/themes/tableButtons.tres" id="1_cn4gf"]
+[ext_resource type="Texture2D" uid="uid://p025a3ija0fv" path="res://junk/numbers/n/1.png" id="2_mnitx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_by85s"]
+size = Vector2(41, 43)
+
+[node name="1" type="Area2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(21.5, 21.5)
+shape = SubResource("RectangleShape2D_by85s")
+
+[node name="Button" type="Button" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+theme = ExtResource("1_cn4gf")
+icon = ExtResource("2_mnitx")

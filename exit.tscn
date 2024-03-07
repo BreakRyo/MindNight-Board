@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=3 uid="uid://dnrkdu0lspuix"]
+
+[ext_resource type="Theme" uid="uid://cd37wv1dbj6gf" path="res://junk/themes/buttontheme.tres" id="1_0qcu2"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 520.0
+offset_bottom = 40.0
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -70.0
+offset_top = 4.0
+offset_right = -6.35999
+offset_bottom = 28.0
+grow_horizontal = 0
+theme = ExtResource("1_0qcu2")
+text = "Exit"

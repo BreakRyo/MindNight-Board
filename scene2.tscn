@@ -1,0 +1,369 @@
+[gd_scene load_steps=17 format=3 uid="uid://3pviqctxv60y"]
+
+[ext_resource type="Script" path="res://scene2.cs" id="1_aepph"]
+[ext_resource type="Texture2D" uid="uid://cgdvts4w2uehn" path="res://junk/backgroundTopLeft9.png" id="2_xenha"]
+[ext_resource type="PackedScene" uid="uid://dnrkdu0lspuix" path="res://exit.tscn" id="3_fklyd"]
+[ext_resource type="Theme" uid="uid://cd37wv1dbj6gf" path="res://junk/themes/buttontheme.tres" id="4_bi0v6"]
+[ext_resource type="Script" path="res://cards.cs" id="7_yampo"]
+[ext_resource type="Script" path="res://block.cs" id="10_ctqp5"]
+[ext_resource type="Theme" uid="uid://b05l8sqvhvpu7" path="res://junk/themes/tableButtons.tres" id="10_tuv7c"]
+[ext_resource type="Texture2D" uid="uid://p025a3ija0fv" path="res://junk/numbers/n/1.png" id="11_nl8vm"]
+[ext_resource type="Texture2D" uid="uid://bu47m6pncua4y" path="res://junk/numbers/n/2.png" id="12_q3bg5"]
+[ext_resource type="Texture2D" uid="uid://whbygqineluu" path="res://junk/numbers/n/3.png" id="13_iqwhy"]
+[ext_resource type="Texture2D" uid="uid://jfoa5y3kkt0p" path="res://junk/numbers/n/4.png" id="14_ff3wo"]
+[ext_resource type="Texture2D" uid="uid://blyvb0c1w4414" path="res://junk/numbers/n/5.png" id="15_fg5e0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7uivy"]
+size = Vector2(194, 83)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e2too"]
+size = Vector2(197, 79)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uwcjp"]
+size = Vector2(464.5, 33)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_by85s"]
+size = Vector2(41, 43)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_aepph")
+
+[node name="TextureRect" type="TextureRect" parent="Control"]
+layout_mode = 0
+offset_right = 520.0
+offset_bottom = 640.0
+texture = ExtResource("2_xenha")
+
+[node name="exit" parent="Control" instance=ExtResource("3_fklyd")]
+
+[node name="Button2" type="Button" parent="Control/exit"]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 6.0
+offset_right = 35.0
+offset_bottom = 36.0
+theme = ExtResource("4_bi0v6")
+theme_override_font_sizes/font_size = 20
+text = "<"
+
+[node name="table" type="Control" parent="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 35.0
+offset_top = 56.0
+offset_right = 75.0
+offset_bottom = 96.0
+
+[node name="12" type="Button" parent="Control/table"]
+layout_mode = 0
+offset_left = 61.0
+offset_top = 52.0
+offset_right = 126.0
+offset_bottom = 117.0
+theme = ExtResource("10_tuv7c")
+script = ExtResource("10_ctqp5")
+
+[node name="1" type="Sprite2D" parent="Control/table/12" groups=["table"]]
+position = Vector2(17.5, 31.5)
+texture = ExtResource("11_nl8vm")
+
+[node name="2" type="Sprite2D" parent="Control/table/12" groups=["table"]]
+position = Vector2(43.5, 31.5)
+texture = ExtResource("12_q3bg5")
+
+[node name="23" type="Button" parent="Control/table"]
+layout_mode = 0
+offset_left = 138.0
+offset_top = 52.0
+offset_right = 203.0
+offset_bottom = 117.0
+theme = ExtResource("10_tuv7c")
+script = ExtResource("10_ctqp5")
+
+[node name="2" type="Sprite2D" parent="Control/table/23" groups=["table"]]
+position = Vector2(19.5, 32.5)
+texture = ExtResource("12_q3bg5")
+
+[node name="3" type="Sprite2D" parent="Control/table/23" groups=["table"]]
+position = Vector2(45.5, 32.5)
+texture = ExtResource("13_iqwhy")
+
+[node name="34" type="Button" parent="Control/table"]
+layout_mode = 0
+offset_left = 217.0
+offset_top = 52.0
+offset_right = 282.0
+offset_bottom = 117.0
+theme = ExtResource("10_tuv7c")
+script = ExtResource("10_ctqp5")
+
+[node name="3" type="Sprite2D" parent="Control/table/34" groups=["table"]]
+position = Vector2(19.5, 33.5)
+texture = ExtResource("13_iqwhy")
+
+[node name="4" type="Sprite2D" parent="Control/table/34" groups=["table"]]
+position = Vector2(45.5, 33.5)
+texture = ExtResource("14_ff3wo")
+
+[node name="45" type="Button" parent="Control/table"]
+layout_mode = 0
+offset_left = 294.0
+offset_top = 51.0
+offset_right = 359.0
+offset_bottom = 116.0
+theme = ExtResource("10_tuv7c")
+script = ExtResource("10_ctqp5")
+
+[node name="4" type="Sprite2D" parent="Control/table/45" groups=["table"]]
+position = Vector2(19.5, 32.5)
+texture = ExtResource("14_ff3wo")
+
+[node name="5" type="Sprite2D" parent="Control/table/45" groups=["table"]]
+position = Vector2(45.5, 32.5)
+texture = ExtResource("15_fg5e0")
+
+[node name="13" type="Button" parent="Control/table"]
+layout_mode = 0
+offset_left = 61.0
+offset_top = 130.0
+offset_right = 126.0
+offset_bottom = 195.0
+theme = ExtResource("10_tuv7c")
+script = ExtResource("10_ctqp5")
+
+[node name="1" type="Sprite2D" parent="Control/table/13" groups=["table"]]
+position = Vector2(18.5, 33.5)
+texture = ExtResource("11_nl8vm")
+
+[node name="3" type="Sprite2D" parent="Control/table/13" groups=["table"]]
+position = Vector2(44.5, 33.5)
+texture = ExtResource("13_iqwhy")
+
+[node name="24" type="Button" parent="Control/table"]
+layout_mode = 0
+offset_left = 139.0
+offset_top = 130.0
+offset_right = 204.0
+offset_bottom = 195.0
+theme = ExtResource("10_tuv7c")
+script = ExtResource("10_ctqp5")
+
+[node name="2" type="Sprite2D" parent="Control/table/24" groups=["table"]]
+position = Vector2(19.5, 33.5)
+texture = ExtResource("12_q3bg5")
+
+[node name="4" type="Sprite2D" parent="Control/table/24" groups=["table"]]
+position = Vector2(45.5, 33.5)
+texture = ExtResource("14_ff3wo")
+
+[node name="35" type="Button" parent="Control/table"]
+layout_mode = 0
+offset_left = 217.0
+offset_top = 130.0
+offset_right = 282.0
+offset_bottom = 195.0
+theme = ExtResource("10_tuv7c")
+script = ExtResource("10_ctqp5")
+
+[node name="3" type="Sprite2D" parent="Control/table/35" groups=["table"]]
+position = Vector2(19.5, 33.5)
+texture = ExtResource("13_iqwhy")
+
+[node name="5" type="Sprite2D" parent="Control/table/35" groups=["table"]]
+position = Vector2(45.5, 33.5)
+texture = ExtResource("15_fg5e0")
+
+[node name="14" type="Button" parent="Control/table"]
+layout_mode = 0
+offset_left = 61.0
+offset_top = 208.0
+offset_right = 126.0
+offset_bottom = 273.0
+theme = ExtResource("10_tuv7c")
+script = ExtResource("10_ctqp5")
+
+[node name="1" type="Sprite2D" parent="Control/table/14" groups=["table"]]
+position = Vector2(19.5, 35.5)
+texture = ExtResource("11_nl8vm")
+
+[node name="4" type="Sprite2D" parent="Control/table/14" groups=["table"]]
+position = Vector2(45.5, 35.5)
+texture = ExtResource("14_ff3wo")
+
+[node name="25" type="Button" parent="Control/table"]
+layout_mode = 0
+offset_left = 138.0
+offset_top = 208.0
+offset_right = 203.0
+offset_bottom = 273.0
+theme = ExtResource("10_tuv7c")
+script = ExtResource("10_ctqp5")
+
+[node name="2" type="Sprite2D" parent="Control/table/25" groups=["table"]]
+position = Vector2(19.5, 35.5)
+texture = ExtResource("12_q3bg5")
+
+[node name="5" type="Sprite2D" parent="Control/table/25" groups=["table"]]
+position = Vector2(45.5, 35.5)
+texture = ExtResource("15_fg5e0")
+
+[node name="15" type="Button" parent="Control/table"]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 286.0
+offset_right = 125.0
+offset_bottom = 351.0
+theme = ExtResource("10_tuv7c")
+script = ExtResource("10_ctqp5")
+
+[node name="1" type="Sprite2D" parent="Control/table/15" groups=["table"]]
+position = Vector2(19.5, 33.5)
+texture = ExtResource("11_nl8vm")
+
+[node name="5" type="Sprite2D" parent="Control/table/15" groups=["table"]]
+position = Vector2(45.5, 33.5)
+texture = ExtResource("15_fg5e0")
+
+[node name="Confirmed Hacker" type="Area2D" parent="Control"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Control/Confirmed Hacker"]
+position = Vector2(134, 566.5)
+shape = SubResource("RectangleShape2D_7uivy")
+
+[node name="Confirmed Agent" type="Area2D" parent="Control"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Control/Confirmed Agent"]
+position = Vector2(385.5, 558.5)
+shape = SubResource("RectangleShape2D_e2too")
+
+[node name="Uncertain" type="Area2D" parent="Control"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Control/Uncertain"]
+position = Vector2(259.75, 458.5)
+shape = SubResource("RectangleShape2D_uwcjp")
+
+[node name="1" type="Area2D" parent="." groups=["cards"]]
+position = Vector2(42, 437)
+script = ExtResource("7_yampo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="1"]
+position = Vector2(21.5, 21.5)
+shape = SubResource("RectangleShape2D_by85s")
+
+[node name="Button" type="Button" parent="1"]
+process_mode = 4
+offset_right = 43.0
+offset_bottom = 43.0
+theme = ExtResource("10_tuv7c")
+icon = ExtResource("11_nl8vm")
+
+[node name="2" type="Area2D" parent="." groups=["cards"]]
+position = Vector2(123, 443)
+script = ExtResource("7_yampo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="2"]
+position = Vector2(21.5, 21.5)
+shape = SubResource("RectangleShape2D_by85s")
+
+[node name="Button" type="Button" parent="2"]
+process_mode = 4
+offset_right = 43.0
+offset_bottom = 43.0
+theme = ExtResource("10_tuv7c")
+icon = ExtResource("12_q3bg5")
+
+[node name="3" type="Area2D" parent="." groups=["cards"]]
+position = Vector2(330, 448)
+script = ExtResource("7_yampo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="3"]
+position = Vector2(21.5, 21.5)
+shape = SubResource("RectangleShape2D_by85s")
+
+[node name="Button" type="Button" parent="3"]
+process_mode = 4
+offset_right = 40.0
+offset_bottom = 40.0
+theme = ExtResource("10_tuv7c")
+icon = ExtResource("13_iqwhy")
+
+[node name="4" type="Area2D" parent="." groups=["cards"]]
+position = Vector2(381, 441)
+script = ExtResource("7_yampo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="4"]
+position = Vector2(21.5, 21.5)
+shape = SubResource("RectangleShape2D_by85s")
+
+[node name="Button" type="Button" parent="4"]
+process_mode = 4
+offset_right = 40.0
+offset_bottom = 40.0
+theme = ExtResource("10_tuv7c")
+icon = ExtResource("14_ff3wo")
+
+[node name="5" type="Area2D" parent="." groups=["cards"]]
+position = Vector2(441, 447)
+script = ExtResource("7_yampo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="5"]
+position = Vector2(21.5, 21.5)
+shape = SubResource("RectangleShape2D_by85s")
+
+[node name="Button" type="Button" parent="5"]
+process_mode = 4
+offset_right = 40.0
+offset_bottom = 40.0
+theme = ExtResource("10_tuv7c")
+icon = ExtResource("15_fg5e0")
+
+[connection signal="pressed" from="Control/exit/Button" to="Control" method="exitApp"]
+[connection signal="pressed" from="Control/exit/Button2" to="Control" method="goBack"]
+[connection signal="pressed" from="Control/table/12" to="Control/table/12" method="_on_pressed"]
+[connection signal="pressed" from="Control/table/23" to="Control/table/23" method="_on_pressed"]
+[connection signal="pressed" from="Control/table/34" to="Control/table/34" method="_on_pressed"]
+[connection signal="pressed" from="Control/table/45" to="Control/table/45" method="_on_pressed"]
+[connection signal="pressed" from="Control/table/13" to="Control/table/13" method="_on_pressed"]
+[connection signal="pressed" from="Control/table/24" to="Control/table/24" method="_on_pressed"]
+[connection signal="pressed" from="Control/table/35" to="Control/table/35" method="_on_pressed"]
+[connection signal="pressed" from="Control/table/14" to="Control/table/14" method="_on_pressed"]
+[connection signal="pressed" from="Control/table/25" to="Control/table/25" method="_on_pressed"]
+[connection signal="pressed" from="Control/table/15" to="Control/table/15" method="_on_pressed"]
+[connection signal="area_entered" from="1" to="1" method="_on_area_entered"]
+[connection signal="area_exited" from="1" to="1" method="_on_area_exited"]
+[connection signal="mouse_entered" from="1" to="1" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="1" to="1" method="_on_mouse_exited"]
+[connection signal="area_entered" from="2" to="2" method="_on_area_entered"]
+[connection signal="area_exited" from="2" to="2" method="_on_area_exited"]
+[connection signal="mouse_entered" from="2" to="2" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="2" to="2" method="_on_mouse_exited"]
+[connection signal="button_down" from="2/Button" to="2" method="_on_button_button_down"]
+[connection signal="button_up" from="2/Button" to="2" method="_on_button_button_up"]
+[connection signal="area_entered" from="3" to="3" method="_on_area_entered"]
+[connection signal="area_exited" from="3" to="3" method="_on_area_exited"]
+[connection signal="mouse_entered" from="3" to="3" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="3" to="3" method="_on_mouse_exited"]
+[connection signal="button_down" from="3/Button" to="3" method="_on_button_button_down"]
+[connection signal="button_up" from="3/Button" to="3" method="_on_button_button_up"]
+[connection signal="area_entered" from="4" to="4" method="_on_area_entered"]
+[connection signal="area_exited" from="4" to="4" method="_on_area_exited"]
+[connection signal="mouse_entered" from="4" to="4" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="4" to="4" method="_on_mouse_exited"]
+[connection signal="button_down" from="4/Button" to="4" method="_on_button_button_down"]
+[connection signal="button_up" from="4/Button" to="4" method="_on_button_button_up"]
+[connection signal="area_entered" from="5" to="5" method="_on_area_entered"]
+[connection signal="area_exited" from="5" to="5" method="_on_area_exited"]
+[connection signal="mouse_entered" from="5" to="5" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="5" to="5" method="_on_mouse_exited"]
+[connection signal="button_down" from="5/Button" to="5" method="_on_button_button_down"]
+[connection signal="button_up" from="5/Button" to="5" method="_on_button_button_up"]
+
+[editable path="Control/exit"]
