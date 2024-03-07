@@ -17,7 +17,7 @@ MindNight Board is a board for the game mindnight where it helps you use the pos
 
 ## Usage
 
-1. extract the content in the zip file.
+1. Extract the content in the zip file.
 2. Run the application: `MindNightBoard.exe`.
 
 
