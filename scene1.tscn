@@ -1,13 +1,13 @@
 [gd_scene load_steps=11 format=3 uid="uid://nxejyyjm05wk"]
 
-[ext_resource type="Texture2D" uid="uid://batputtyxvt3o" path="res://junk/backgroundTopLeft.png" id="1_2p765"]
 [ext_resource type="Script" path="res://scene1.cs" id="1_g2wkj"]
 [ext_resource type="FontFile" uid="uid://bc0oawvcxbr2i" path="res://junk/lunchds.ttf" id="2_350lh"]
-[ext_resource type="PackedScene" uid="uid://dnrkdu0lspuix" path="res://exit.tscn" id="3_0pcjc"]
+[ext_resource type="Texture2D" uid="uid://bhqkya2wyp2ca" path="res://junk/backgroundTopLeft-Home.png" id="2_rueyg"]
 [ext_resource type="FontFile" uid="uid://dyiqyukragyye" path="res://junk/Symtext.ttf" id="3_kn4rc"]
 [ext_resource type="Theme" uid="uid://cd37wv1dbj6gf" path="res://junk/themes/buttontheme.tres" id="4_cydcn"]
+[ext_resource type="Script" path="res://PlayerDetection.cs" id="6_2auc4"]
 [ext_resource type="Script" path="res://Positions.cs" id="6_dvflf"]
-[ext_resource type="Texture2D" uid="uid://5hiyuaegi5pe" path="res://junk/hobo.png" id="6_lox7x"]
+[ext_resource type="Theme" uid="uid://r4plxl4jd41w" path="res://junk/themes/buttontheme1.tres" id="7_uw1em"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_asn1h"]
 bg_color = Color(0.0196078, 0.0352941, 0.0666667, 1)
@@ -32,10 +32,8 @@ script = ExtResource("1_g2wkj")
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 0
 offset_right = 520.0
-offset_bottom = 640.0
-texture = ExtResource("1_2p765")
-
-[node name="Control" parent="." instance=ExtResource("3_0pcjc")]
+offset_bottom = 573.0
+texture = ExtResource("2_rueyg")
 
 [node name="Container" type="Control" parent="."]
 layout_mode = 1
@@ -44,10 +42,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -152.6
-offset_top = -94.775
-offset_right = 173.99
-offset_bottom = -54.775
+offset_left = -155.0
+offset_top = -65.5
+offset_right = 171.59
+offset_bottom = -25.5
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -80,23 +78,57 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -125.0
-offset_top = 44.685
-offset_right = 112.0
-offset_bottom = 194.615
+offset_left = -130.0
+offset_top = 61.5
+offset_right = 169.505
+offset_bottom = 233.76
 grow_horizontal = 2
 grow_vertical = 2
 theme = SubResource("Theme_in5lp")
+
+[node name="Label2" type="Label" parent="Panel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -139.753
+offset_top = 7.99999
+offset_right = 71.2475
+offset_bottom = 32.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.129412, 0.203922, 0.305882, 1)
+theme_override_fonts/font = ExtResource("3_kn4rc")
+text = "Number Of Players ?"
+
+[node name="5P" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 35.0
+offset_right = 48.0
+offset_bottom = 72.0
+theme = ExtResource("4_cydcn")
+text = "5"
+script = ExtResource("6_2auc4")
+
+[node name="6P" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 54.0
+offset_top = 35.0
+offset_right = 91.0
+offset_bottom = 72.0
+theme = ExtResource("7_uw1em")
+text = "6"
+script = ExtResource("6_2auc4")
 
 [node name="Label" type="Label" parent="Panel"]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -77.5
-offset_top = 5.305
-offset_right = 77.5
-offset_bottom = 29.305
+offset_left = -137.753
+offset_top = 82.0
+offset_right = 17.2475
+offset_bottom = 106.0
 grow_horizontal = 2
 theme_override_colors/font_color = Color(0.129412, 0.203922, 0.305882, 1)
 theme_override_fonts/font = ExtResource("3_kn4rc")
@@ -104,53 +136,77 @@ text = "your Position ?"
 
 [node name="1" type="Button" parent="Panel"]
 layout_mode = 0
-offset_left = 10.0
-offset_top = 42.0
-offset_right = 47.0
-offset_bottom = 79.0
-theme = ExtResource("4_cydcn")
+offset_left = 12.0
+offset_top = 114.0
+offset_right = 49.0
+offset_bottom = 151.0
+theme = ExtResource("7_uw1em")
 text = "1"
 script = ExtResource("6_dvflf")
 
 [node name="2" type="Button" parent="Panel"]
 layout_mode = 0
-offset_left = 55.0
-offset_top = 42.0
-offset_right = 92.0
-offset_bottom = 79.0
-theme = ExtResource("4_cydcn")
+offset_left = 57.0
+offset_top = 114.0
+offset_right = 94.0
+offset_bottom = 151.0
+theme = ExtResource("7_uw1em")
 text = "2"
 script = ExtResource("6_dvflf")
 
 [node name="3" type="Button" parent="Panel"]
 layout_mode = 0
-offset_left = 100.0
-offset_top = 42.0
-offset_right = 137.0
-offset_bottom = 79.0
-theme = ExtResource("4_cydcn")
+offset_left = 102.0
+offset_top = 114.0
+offset_right = 139.0
+offset_bottom = 151.0
+theme = ExtResource("7_uw1em")
 text = "3"
 script = ExtResource("6_dvflf")
 
 [node name="4" type="Button" parent="Panel"]
 layout_mode = 0
-offset_left = 145.0
-offset_top = 42.0
-offset_right = 182.0
-offset_bottom = 79.0
-theme = ExtResource("4_cydcn")
+offset_left = 147.0
+offset_top = 114.0
+offset_right = 184.0
+offset_bottom = 151.0
+theme = ExtResource("7_uw1em")
 text = "4"
 script = ExtResource("6_dvflf")
 
 [node name="5" type="Button" parent="Panel"]
 layout_mode = 0
-offset_left = 190.0
-offset_top = 42.0
-offset_right = 227.0
-offset_bottom = 79.0
-theme = ExtResource("4_cydcn")
+offset_left = 192.0
+offset_top = 114.0
+offset_right = 229.0
+offset_bottom = 151.0
+theme = ExtResource("7_uw1em")
 text = "5"
 script = ExtResource("6_dvflf")
+
+[node name="6" type="Button" parent="Panel"]
+visible = false
+layout_mode = 0
+offset_left = 241.0
+offset_top = 114.0
+offset_right = 278.0
+offset_bottom = 151.0
+theme = ExtResource("7_uw1em")
+text = "6"
+script = ExtResource("6_dvflf")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 542.0
+offset_right = 299.435
+offset_bottom = 566.0
+theme = ExtResource("4_cydcn")
+theme_override_colors/font_color = Color(0.858824, 0.211765, 0.227451, 1)
+theme_override_colors/font_hover_color = Color(0.858824, 0.211765, 0.227451, 1)
+theme_override_colors/font_focus_color = Color(0.858824, 0.211765, 0.227451, 1)
+theme_override_fonts/font = ExtResource("3_kn4rc")
+text = "the possibilities triangle ?"
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 1
@@ -159,44 +215,22 @@ anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -156.0
-offset_top = -30.0
-offset_right = -31.0
-offset_bottom = -6.0
+offset_left = -515.0
+offset_top = -574.0
+offset_right = -390.0
+offset_bottom = -550.0
 grow_horizontal = 0
 grow_vertical = 0
+theme_override_colors/font_color = Color(0.0823529, 0.141176, 0.215686, 1)
 theme_override_fonts/font = ExtResource("3_kn4rc")
 text = "Made by WHY"
 
-[node name="TextureRect2" type="TextureRect" parent="."]
-modulate = Color(1, 1, 1, 0.517647)
-layout_mode = 0
-offset_left = 487.0
-offset_top = 569.0
-offset_right = 511.0
-offset_bottom = 632.0
-texture = ExtResource("6_lox7x")
-expand_mode = 1
-
-[node name="Button" type="Button" parent="."]
-layout_mode = 0
-offset_left = 108.0
-offset_top = 523.0
-offset_right = 402.435
-offset_bottom = 547.0
-theme = ExtResource("4_cydcn")
-theme_override_colors/font_color = Color(0.858824, 0.211765, 0.227451, 1)
-theme_override_colors/font_hover_color = Color(0.858824, 0.211765, 0.227451, 1)
-theme_override_colors/font_focus_color = Color(0.858824, 0.211765, 0.227451, 1)
-theme_override_fonts/font = ExtResource("3_kn4rc")
-text = "the possibilities triangle ?"
-
-[connection signal="pressed" from="Control/Button" to="." method="exitApp"]
+[connection signal="pressed" from="Panel/5P" to="Panel/5P" method="_on_pressed"]
+[connection signal="pressed" from="Panel/6P" to="Panel/6P" method="_on_pressed"]
 [connection signal="pressed" from="Panel/1" to="Panel/1" method="positionSelection"]
 [connection signal="pressed" from="Panel/2" to="Panel/2" method="positionSelection"]
 [connection signal="pressed" from="Panel/3" to="Panel/3" method="positionSelection"]
 [connection signal="pressed" from="Panel/4" to="Panel/4" method="positionSelection"]
 [connection signal="pressed" from="Panel/5" to="Panel/5" method="positionSelection"]
+[connection signal="pressed" from="Panel/6" to="Panel/6" method="positionSelection"]
 [connection signal="pressed" from="Button" to="." method="goToTutorial"]
-
-[editable path="Control"]

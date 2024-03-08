@@ -1,5 +1,6 @@
 using Godot;
 using System;
+using System.Linq;
 using System.Text.RegularExpressions;
 
 public partial class scene2 : Control
@@ -7,17 +8,17 @@ public partial class scene2 : Control
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
+
 		int mypos = GetNode<Glob>("/root/Glob").myPosition;
-		var tableNodes = GetTree().GetNodesInGroup("table");
+		var tableNodes = GetTree().GetNodesInGroup("table1");
 		foreach(var i in tableNodes){
 			if(i.Name==mypos.ToString()){
-				i.GetParent().Call("_on_pressed");
-				i.GetParent().ProcessMode = ProcessModeEnum.Disabled;
+				((Button)i.GetParent()).Hide();
 			}
 		}
-		var cards = GetTree().GetNodesInGroup("cards");
+		var cards = GetTree().GetNodesInGroup("cards1");
 		((Area2D)cards[mypos-1]).Hide();
-
+		
 
 	}
 
@@ -25,10 +26,6 @@ public partial class scene2 : Control
 	public override void _Process(double delta)
 	{
 	}
-	private void exitApp(){
-		GetTree().Quit();
-	}
-	private void goBack(){
-		GetTree().ChangeSceneToFile("res://scene1.tscn");
-	}
+
+
 }

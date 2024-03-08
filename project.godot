@@ -13,6 +13,8 @@ config_version=5
 config/name="MNBoard"
 run/main_scene="res://scene1.tscn"
 config/features=PackedStringArray("4.2", "C#", "Forward Plus")
+boot_splash/bg_color=Color(0.141176, 0.141176, 0.141176, 1)
+boot_splash/image="res://icon1.png"
 config/icon="res://iconm.svg"
 
 [autoload]
@@ -22,9 +24,8 @@ Glob="*res://Glob.cs"
 [display]
 
 window/size/viewport_width=520
-window/size/viewport_height=640
+window/size/viewport_height=573
 window/size/resizable=false
-window/size/borderless=true
 window/size/always_on_top=true
 
 [dotnet]
@@ -42,3 +43,4 @@ mouse_left={
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
+environment/defaults/default_clear_color=Color(0.301961, 0.301961, 0.301961, 1)

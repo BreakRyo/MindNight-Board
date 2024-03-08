@@ -1,22 +1,23 @@
-[gd_scene load_steps=34 format=3 uid="uid://3pviqctxv60y"]
+[gd_scene load_steps=32 format=3 uid="uid://bna6igw0ijjym"]
 
-[ext_resource type="Script" path="res://scene2.cs" id="1_aepph"]
-[ext_resource type="Script" path="res://node2.cs" id="1_u0dho"]
-[ext_resource type="Theme" uid="uid://r4plxl4jd41w" path="res://junk/themes/buttontheme1.tres" id="2_n760x"]
-[ext_resource type="Texture2D" uid="uid://cgdvts4w2uehn" path="res://junk/backgroundTopLeft9.png" id="2_xenha"]
-[ext_resource type="Script" path="res://tabs.cs" id="3_3fvoa"]
-[ext_resource type="Theme" uid="uid://cd37wv1dbj6gf" path="res://junk/themes/buttontheme.tres" id="4_bi0v6"]
-[ext_resource type="Script" path="res://cards.cs" id="7_yampo"]
-[ext_resource type="Script" path="res://block.cs" id="10_ctqp5"]
-[ext_resource type="Theme" uid="uid://b05l8sqvhvpu7" path="res://junk/themes/tableButtons.tres" id="10_tuv7c"]
-[ext_resource type="Texture2D" uid="uid://p025a3ija0fv" path="res://junk/numbers/n/1.png" id="11_nl8vm"]
-[ext_resource type="Texture2D" uid="uid://bu47m6pncua4y" path="res://junk/numbers/n/2.png" id="12_q3bg5"]
-[ext_resource type="Texture2D" uid="uid://whbygqineluu" path="res://junk/numbers/n/3.png" id="13_iqwhy"]
-[ext_resource type="Texture2D" uid="uid://jfoa5y3kkt0p" path="res://junk/numbers/n/4.png" id="14_ff3wo"]
-[ext_resource type="Texture2D" uid="uid://ccuqybdfibfu5" path="res://junk/shadow.png" id="15_552sl"]
-[ext_resource type="Texture2D" uid="uid://blyvb0c1w4414" path="res://junk/numbers/n/5.png" id="15_fg5e0"]
-[ext_resource type="Texture2D" uid="uid://o8i3xf33yhie" path="res://junk/note.png" id="15_uu077"]
-[ext_resource type="Script" path="res://Note.cs" id="17_b4aa5"]
+[ext_resource type="Script" path="res://node2.cs" id="1_bleeo"]
+[ext_resource type="Script" path="res://scene2.cs" id="2_5m283"]
+[ext_resource type="Texture2D" uid="uid://e25oycl2enfo" path="res://junk/backgroundTopLeft6.png" id="3_l15iy"]
+[ext_resource type="Theme" uid="uid://b05l8sqvhvpu7" path="res://junk/themes/tableButtons.tres" id="4_2waoq"]
+[ext_resource type="Script" path="res://block.cs" id="5_a02yq"]
+[ext_resource type="Texture2D" uid="uid://p025a3ija0fv" path="res://junk/numbers/n/1.png" id="6_bml2f"]
+[ext_resource type="Texture2D" uid="uid://bu47m6pncua4y" path="res://junk/numbers/n/2.png" id="7_dhqic"]
+[ext_resource type="Texture2D" uid="uid://whbygqineluu" path="res://junk/numbers/n/3.png" id="8_n8ysj"]
+[ext_resource type="Texture2D" uid="uid://jfoa5y3kkt0p" path="res://junk/numbers/n/4.png" id="9_4f4ri"]
+[ext_resource type="Texture2D" uid="uid://blyvb0c1w4414" path="res://junk/numbers/n/5.png" id="10_sikh4"]
+[ext_resource type="Script" path="res://cards.cs" id="11_8jayk"]
+[ext_resource type="Texture2D" uid="uid://cxlss7s8jjwem" path="res://junk/numbers/n/6.png" id="11_idyw4"]
+[ext_resource type="Theme" uid="uid://cd37wv1dbj6gf" path="res://junk/themes/buttontheme.tres" id="12_d862y"]
+[ext_resource type="Script" path="res://tabs.cs" id="13_3ast5"]
+[ext_resource type="Theme" uid="uid://r4plxl4jd41w" path="res://junk/themes/buttontheme1.tres" id="14_nypx7"]
+[ext_resource type="Texture2D" uid="uid://ccuqybdfibfu5" path="res://junk/shadow.png" id="15_yscgn"]
+[ext_resource type="Texture2D" uid="uid://o8i3xf33yhie" path="res://junk/note.png" id="16_mq8ck"]
+[ext_resource type="Script" path="res://Note.cs" id="17_u0kbb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7uivy"]
 size = Vector2(194, 83)
@@ -30,16 +31,7 @@ size = Vector2(464.5, 33)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_by85s"]
 size = Vector2(41, 43)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_j6c40"]
-size = Vector2(194, 83)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ipe68"]
-size = Vector2(197, 79)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_qthxr"]
-size = Vector2(464.5, 33)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_6f1mt"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_28sgv"]
 size = Vector2(41, 43)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7nqao"]
@@ -91,7 +83,7 @@ Button/styles/normal = SubResource("StyleBoxFlat_jlp3s")
 Button/styles/pressed = SubResource("StyleBoxFlat_1kg8p")
 
 [node name="Node2D" type="Node2D"]
-script = ExtResource("1_u0dho")
+script = ExtResource("1_bleeo")
 
 [node name="Tab1" type="Node2D" parent="."]
 
@@ -102,13 +94,13 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_aepph")
+script = ExtResource("2_5m283")
 
 [node name="TextureRect" type="TextureRect" parent="Tab1/Control"]
 layout_mode = 0
 offset_right = 520.0
 offset_bottom = 573.0
-texture = ExtResource("2_xenha")
+texture = ExtResource("3_l15iy")
 
 [node name="table" type="Control" parent="Tab1/Control"]
 layout_mode = 3
@@ -122,191 +114,286 @@ offset_bottom = 46.0
 layout_mode = 0
 offset_left = 61.0
 offset_top = 52.0
-offset_right = 126.0
-offset_bottom = 117.0
-theme = ExtResource("10_tuv7c")
-script = ExtResource("10_ctqp5")
+offset_right = 111.0
+offset_bottom = 102.0
+theme = ExtResource("4_2waoq")
+script = ExtResource("5_a02yq")
 
 [node name="1" type="Sprite2D" parent="Tab1/Control/table/12" groups=["table1"]]
 modulate = Color(0.458824, 0.486275, 0.52549, 1)
-position = Vector2(17.5, 31.5)
-texture = ExtResource("11_nl8vm")
+position = Vector2(12.5, 24.5)
+texture = ExtResource("6_bml2f")
 
 [node name="2" type="Sprite2D" parent="Tab1/Control/table/12" groups=["table1"]]
 modulate = Color(0.458824, 0.486275, 0.52549, 1)
-position = Vector2(43.5, 31.5)
-texture = ExtResource("12_q3bg5")
+position = Vector2(35, 25)
+texture = ExtResource("7_dhqic")
 
 [node name="23" type="Button" parent="Tab1/Control/table"]
 layout_mode = 0
-offset_left = 138.0
+offset_left = 122.0
 offset_top = 52.0
-offset_right = 203.0
-offset_bottom = 117.0
-theme = ExtResource("10_tuv7c")
-script = ExtResource("10_ctqp5")
+offset_right = 172.0
+offset_bottom = 102.0
+theme = ExtResource("4_2waoq")
+script = ExtResource("5_a02yq")
 
 [node name="2" type="Sprite2D" parent="Tab1/Control/table/23" groups=["table1"]]
 modulate = Color(0.458824, 0.486275, 0.52549, 1)
-position = Vector2(19.5, 32.5)
-texture = ExtResource("12_q3bg5")
+position = Vector2(12.5, 25.5)
+texture = ExtResource("7_dhqic")
 
 [node name="3" type="Sprite2D" parent="Tab1/Control/table/23" groups=["table1"]]
 modulate = Color(0.458824, 0.486275, 0.52549, 1)
-position = Vector2(45.5, 32.5)
-texture = ExtResource("13_iqwhy")
+position = Vector2(36, 25)
+texture = ExtResource("8_n8ysj")
 
 [node name="34" type="Button" parent="Tab1/Control/table"]
 layout_mode = 0
-offset_left = 217.0
+offset_left = 185.0
 offset_top = 52.0
-offset_right = 282.0
-offset_bottom = 117.0
-theme = ExtResource("10_tuv7c")
-script = ExtResource("10_ctqp5")
+offset_right = 235.0
+offset_bottom = 102.0
+theme = ExtResource("4_2waoq")
+script = ExtResource("5_a02yq")
 
 [node name="3" type="Sprite2D" parent="Tab1/Control/table/34" groups=["table1"]]
 modulate = Color(0.458824, 0.486275, 0.52549, 1)
-position = Vector2(19.5, 33.5)
-texture = ExtResource("13_iqwhy")
+position = Vector2(12.5, 26.5)
+texture = ExtResource("8_n8ysj")
 
 [node name="4" type="Sprite2D" parent="Tab1/Control/table/34" groups=["table1"]]
 modulate = Color(0.458824, 0.486275, 0.52549, 1)
-position = Vector2(45.5, 33.5)
-texture = ExtResource("14_ff3wo")
+position = Vector2(35, 26)
+texture = ExtResource("9_4f4ri")
 
 [node name="45" type="Button" parent="Tab1/Control/table"]
 layout_mode = 0
-offset_left = 294.0
-offset_top = 51.0
-offset_right = 359.0
-offset_bottom = 116.0
-theme = ExtResource("10_tuv7c")
-script = ExtResource("10_ctqp5")
+offset_left = 246.0
+offset_top = 52.0
+offset_right = 296.0
+offset_bottom = 102.0
+theme = ExtResource("4_2waoq")
+script = ExtResource("5_a02yq")
 
 [node name="4" type="Sprite2D" parent="Tab1/Control/table/45" groups=["table1"]]
 modulate = Color(0.458824, 0.486275, 0.52549, 1)
-position = Vector2(19.5, 32.5)
-texture = ExtResource("14_ff3wo")
+position = Vector2(12.5, 26.5)
+texture = ExtResource("9_4f4ri")
 
 [node name="5" type="Sprite2D" parent="Tab1/Control/table/45" groups=["table1"]]
 modulate = Color(0.458824, 0.486275, 0.52549, 1)
-position = Vector2(45.5, 32.5)
-texture = ExtResource("15_fg5e0")
+position = Vector2(35, 26.5)
+texture = ExtResource("10_sikh4")
+
+[node name="56" type="Button" parent="Tab1/Control/table"]
+layout_mode = 0
+offset_left = 309.0
+offset_top = 52.0
+offset_right = 359.0
+offset_bottom = 102.0
+theme = ExtResource("4_2waoq")
+script = ExtResource("5_a02yq")
+
+[node name="5" type="Sprite2D" parent="Tab1/Control/table/56" groups=["table1"]]
+modulate = Color(0.458824, 0.486275, 0.52549, 1)
+position = Vector2(12.5, 24.5)
+texture = ExtResource("10_sikh4")
+
+[node name="6" type="Sprite2D" parent="Tab1/Control/table/56" groups=["table1"]]
+modulate = Color(0.458824, 0.486275, 0.52549, 1)
+position = Vector2(35, 24)
+texture = ExtResource("11_idyw4")
 
 [node name="13" type="Button" parent="Tab1/Control/table"]
 layout_mode = 0
-offset_left = 61.0
-offset_top = 130.0
-offset_right = 126.0
-offset_bottom = 195.0
-theme = ExtResource("10_tuv7c")
-script = ExtResource("10_ctqp5")
+offset_left = 60.0
+offset_top = 113.0
+offset_right = 110.0
+offset_bottom = 163.0
+theme = ExtResource("4_2waoq")
+script = ExtResource("5_a02yq")
 
 [node name="1" type="Sprite2D" parent="Tab1/Control/table/13" groups=["table1"]]
 modulate = Color(0.458824, 0.486275, 0.52549, 1)
-position = Vector2(18.5, 33.5)
-texture = ExtResource("11_nl8vm")
+position = Vector2(12.5, 25)
+texture = ExtResource("6_bml2f")
 
 [node name="3" type="Sprite2D" parent="Tab1/Control/table/13" groups=["table1"]]
 modulate = Color(0.458824, 0.486275, 0.52549, 1)
-position = Vector2(44.5, 33.5)
-texture = ExtResource("13_iqwhy")
+position = Vector2(36, 25)
+texture = ExtResource("8_n8ysj")
 
 [node name="24" type="Button" parent="Tab1/Control/table"]
 layout_mode = 0
-offset_left = 139.0
-offset_top = 130.0
-offset_right = 204.0
-offset_bottom = 195.0
-theme = ExtResource("10_tuv7c")
-script = ExtResource("10_ctqp5")
+offset_left = 122.0
+offset_top = 113.0
+offset_right = 172.0
+offset_bottom = 163.0
+theme = ExtResource("4_2waoq")
+script = ExtResource("5_a02yq")
 
 [node name="2" type="Sprite2D" parent="Tab1/Control/table/24" groups=["table1"]]
 modulate = Color(0.458824, 0.486275, 0.52549, 1)
-position = Vector2(19.5, 33.5)
-texture = ExtResource("12_q3bg5")
+position = Vector2(13, 24)
+texture = ExtResource("7_dhqic")
 
 [node name="4" type="Sprite2D" parent="Tab1/Control/table/24" groups=["table1"]]
 modulate = Color(0.458824, 0.486275, 0.52549, 1)
-position = Vector2(45.5, 33.5)
-texture = ExtResource("14_ff3wo")
+position = Vector2(36, 24)
+texture = ExtResource("9_4f4ri")
 
 [node name="35" type="Button" parent="Tab1/Control/table"]
 layout_mode = 0
-offset_left = 217.0
-offset_top = 130.0
-offset_right = 282.0
-offset_bottom = 195.0
-theme = ExtResource("10_tuv7c")
-script = ExtResource("10_ctqp5")
+offset_left = 184.0
+offset_top = 113.0
+offset_right = 234.0
+offset_bottom = 163.0
+theme = ExtResource("4_2waoq")
+script = ExtResource("5_a02yq")
 
 [node name="3" type="Sprite2D" parent="Tab1/Control/table/35" groups=["table1"]]
 modulate = Color(0.458824, 0.486275, 0.52549, 1)
-position = Vector2(19.5, 33.5)
-texture = ExtResource("13_iqwhy")
+position = Vector2(13.5, 25)
+texture = ExtResource("8_n8ysj")
 
 [node name="5" type="Sprite2D" parent="Tab1/Control/table/35" groups=["table1"]]
 modulate = Color(0.458824, 0.486275, 0.52549, 1)
-position = Vector2(45.5, 33.5)
-texture = ExtResource("15_fg5e0")
+position = Vector2(36, 25)
+texture = ExtResource("10_sikh4")
+
+[node name="46" type="Button" parent="Tab1/Control/table"]
+layout_mode = 0
+offset_left = 246.0
+offset_top = 114.0
+offset_right = 296.0
+offset_bottom = 164.0
+theme = ExtResource("4_2waoq")
+script = ExtResource("5_a02yq")
+
+[node name="4" type="Sprite2D" parent="Tab1/Control/table/46" groups=["table1"]]
+modulate = Color(0.458824, 0.486275, 0.52549, 1)
+position = Vector2(12.5, 24.5)
+texture = ExtResource("9_4f4ri")
+
+[node name="6" type="Sprite2D" parent="Tab1/Control/table/46" groups=["table1"]]
+modulate = Color(0.458824, 0.486275, 0.52549, 1)
+position = Vector2(35, 25)
+texture = ExtResource("11_idyw4")
 
 [node name="14" type="Button" parent="Tab1/Control/table"]
 layout_mode = 0
-offset_left = 61.0
-offset_top = 208.0
-offset_right = 126.0
-offset_bottom = 273.0
-theme = ExtResource("10_tuv7c")
-script = ExtResource("10_ctqp5")
+offset_left = 60.0
+offset_top = 176.0
+offset_right = 110.0
+offset_bottom = 226.0
+theme = ExtResource("4_2waoq")
+script = ExtResource("5_a02yq")
 
 [node name="1" type="Sprite2D" parent="Tab1/Control/table/14" groups=["table1"]]
 modulate = Color(0.458824, 0.486275, 0.52549, 1)
-position = Vector2(19.5, 35.5)
-texture = ExtResource("11_nl8vm")
+position = Vector2(12.5, 26)
+texture = ExtResource("6_bml2f")
 
 [node name="4" type="Sprite2D" parent="Tab1/Control/table/14" groups=["table1"]]
 modulate = Color(0.458824, 0.486275, 0.52549, 1)
-position = Vector2(45.5, 35.5)
-texture = ExtResource("14_ff3wo")
+position = Vector2(35, 25.5)
+texture = ExtResource("9_4f4ri")
 
 [node name="25" type="Button" parent="Tab1/Control/table"]
 layout_mode = 0
-offset_left = 138.0
-offset_top = 208.0
-offset_right = 203.0
-offset_bottom = 273.0
-theme = ExtResource("10_tuv7c")
-script = ExtResource("10_ctqp5")
+offset_left = 122.0
+offset_top = 175.0
+offset_right = 172.0
+offset_bottom = 225.0
+theme = ExtResource("4_2waoq")
+script = ExtResource("5_a02yq")
 
 [node name="2" type="Sprite2D" parent="Tab1/Control/table/25" groups=["table1"]]
 modulate = Color(0.458824, 0.486275, 0.52549, 1)
-position = Vector2(19.5, 35.5)
-texture = ExtResource("12_q3bg5")
+position = Vector2(12.5, 24)
+texture = ExtResource("7_dhqic")
 
 [node name="5" type="Sprite2D" parent="Tab1/Control/table/25" groups=["table1"]]
 modulate = Color(0.458824, 0.486275, 0.52549, 1)
-position = Vector2(45.5, 35.5)
-texture = ExtResource("15_fg5e0")
+position = Vector2(36, 23.5)
+texture = ExtResource("10_sikh4")
+
+[node name="36" type="Button" parent="Tab1/Control/table"]
+layout_mode = 0
+offset_left = 184.0
+offset_top = 175.0
+offset_right = 234.0
+offset_bottom = 225.0
+theme = ExtResource("4_2waoq")
+script = ExtResource("5_a02yq")
+
+[node name="3" type="Sprite2D" parent="Tab1/Control/table/36" groups=["table1"]]
+modulate = Color(0.458824, 0.486275, 0.52549, 1)
+position = Vector2(12.5, 24.5)
+texture = ExtResource("8_n8ysj")
+
+[node name="6" type="Sprite2D" parent="Tab1/Control/table/36" groups=["table1"]]
+modulate = Color(0.458824, 0.486275, 0.52549, 1)
+position = Vector2(35, 25)
+texture = ExtResource("11_idyw4")
 
 [node name="15" type="Button" parent="Tab1/Control/table"]
 layout_mode = 0
 offset_left = 60.0
-offset_top = 286.0
-offset_right = 125.0
-offset_bottom = 351.0
-theme = ExtResource("10_tuv7c")
-script = ExtResource("10_ctqp5")
+offset_top = 237.0
+offset_right = 110.0
+offset_bottom = 287.0
+theme = ExtResource("4_2waoq")
+script = ExtResource("5_a02yq")
 
 [node name="1" type="Sprite2D" parent="Tab1/Control/table/15" groups=["table1"]]
 modulate = Color(0.458824, 0.486275, 0.52549, 1)
-position = Vector2(19.5, 33.5)
-texture = ExtResource("11_nl8vm")
+position = Vector2(14.5, 26.5)
+texture = ExtResource("6_bml2f")
 
 [node name="5" type="Sprite2D" parent="Tab1/Control/table/15" groups=["table1"]]
 modulate = Color(0.458824, 0.486275, 0.52549, 1)
-position = Vector2(45.5, 33.5)
-texture = ExtResource("15_fg5e0")
+position = Vector2(36, 26.5)
+texture = ExtResource("10_sikh4")
+
+[node name="26" type="Button" parent="Tab1/Control/table"]
+layout_mode = 0
+offset_left = 122.0
+offset_top = 237.0
+offset_right = 172.0
+offset_bottom = 287.0
+theme = ExtResource("4_2waoq")
+script = ExtResource("5_a02yq")
+
+[node name="2" type="Sprite2D" parent="Tab1/Control/table/26" groups=["table1"]]
+modulate = Color(0.458824, 0.486275, 0.52549, 1)
+position = Vector2(12.5, 24.5)
+texture = ExtResource("7_dhqic")
+
+[node name="6" type="Sprite2D" parent="Tab1/Control/table/26" groups=["table1"]]
+modulate = Color(0.458824, 0.486275, 0.52549, 1)
+position = Vector2(35, 25)
+texture = ExtResource("11_idyw4")
+
+[node name="16" type="Button" parent="Tab1/Control/table"]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 299.0
+offset_right = 110.0
+offset_bottom = 349.0
+theme = ExtResource("4_2waoq")
+script = ExtResource("5_a02yq")
+
+[node name="1" type="Sprite2D" parent="Tab1/Control/table/16" groups=["table1"]]
+modulate = Color(0.458824, 0.486275, 0.52549, 1)
+position = Vector2(12.5, 24.5)
+texture = ExtResource("6_bml2f")
+
+[node name="6" type="Sprite2D" parent="Tab1/Control/table/16" groups=["table1"]]
+modulate = Color(0.458824, 0.486275, 0.52549, 1)
+position = Vector2(35, 25)
+texture = ExtResource("11_idyw4")
 
 [node name="Confirmed Hacker" type="Area2D" parent="Tab1/Control"]
 position = Vector2(-6, -58)
@@ -330,8 +417,8 @@ position = Vector2(259.75, 458.5)
 shape = SubResource("RectangleShape2D_uwcjp")
 
 [node name="1" type="Area2D" parent="Tab1" groups=["cards1"]]
-position = Vector2(39, 384)
-script = ExtResource("7_yampo")
+position = Vector2(29, 385)
+script = ExtResource("11_8jayk")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tab1/1"]
 position = Vector2(21.5, 21.5)
@@ -341,12 +428,12 @@ shape = SubResource("RectangleShape2D_by85s")
 process_mode = 4
 offset_right = 43.0
 offset_bottom = 43.0
-theme = ExtResource("10_tuv7c")
-icon = ExtResource("11_nl8vm")
+theme = ExtResource("4_2waoq")
+icon = ExtResource("6_bml2f")
 
 [node name="2" type="Area2D" parent="Tab1" groups=["cards1"]]
-position = Vector2(120, 390)
-script = ExtResource("7_yampo")
+position = Vector2(83, 384)
+script = ExtResource("11_8jayk")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tab1/2"]
 position = Vector2(21.5, 21.5)
@@ -356,12 +443,12 @@ shape = SubResource("RectangleShape2D_by85s")
 process_mode = 4
 offset_right = 43.0
 offset_bottom = 43.0
-theme = ExtResource("10_tuv7c")
-icon = ExtResource("12_q3bg5")
+theme = ExtResource("4_2waoq")
+icon = ExtResource("7_dhqic")
 
 [node name="3" type="Area2D" parent="Tab1" groups=["cards1"]]
 position = Vector2(327, 395)
-script = ExtResource("7_yampo")
+script = ExtResource("11_8jayk")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tab1/3"]
 position = Vector2(21.5, 21.5)
@@ -371,12 +458,12 @@ shape = SubResource("RectangleShape2D_by85s")
 process_mode = 4
 offset_right = 40.0
 offset_bottom = 40.0
-theme = ExtResource("10_tuv7c")
-icon = ExtResource("13_iqwhy")
+theme = ExtResource("4_2waoq")
+icon = ExtResource("8_n8ysj")
 
 [node name="4" type="Area2D" parent="Tab1" groups=["cards1"]]
 position = Vector2(378, 388)
-script = ExtResource("7_yampo")
+script = ExtResource("11_8jayk")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tab1/4"]
 position = Vector2(21.5, 21.5)
@@ -386,12 +473,12 @@ shape = SubResource("RectangleShape2D_by85s")
 process_mode = 4
 offset_right = 40.0
 offset_bottom = 40.0
-theme = ExtResource("10_tuv7c")
-icon = ExtResource("14_ff3wo")
+theme = ExtResource("4_2waoq")
+icon = ExtResource("9_4f4ri")
 
 [node name="5" type="Area2D" parent="Tab1" groups=["cards1"]]
 position = Vector2(438, 394)
-script = ExtResource("7_yampo")
+script = ExtResource("11_8jayk")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tab1/5"]
 position = Vector2(21.5, 21.5)
@@ -401,8 +488,23 @@ shape = SubResource("RectangleShape2D_by85s")
 process_mode = 4
 offset_right = 40.0
 offset_bottom = 40.0
-theme = ExtResource("10_tuv7c")
-icon = ExtResource("15_fg5e0")
+theme = ExtResource("4_2waoq")
+icon = ExtResource("10_sikh4")
+
+[node name="6" type="Area2D" parent="Tab1" groups=["cards1"]]
+position = Vector2(194, 383)
+script = ExtResource("11_8jayk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tab1/6"]
+position = Vector2(21.5, 21.5)
+shape = SubResource("RectangleShape2D_28sgv")
+
+[node name="Button" type="Button" parent="Tab1/6"]
+process_mode = 4
+offset_right = 40.0
+offset_bottom = 40.0
+theme = ExtResource("4_2waoq")
+icon = ExtResource("11_idyw4")
 
 [node name="Tab2" type="Node2D" parent="."]
 process_mode = 4
@@ -415,13 +517,13 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_aepph")
+script = ExtResource("2_5m283")
 
 [node name="TextureRect" type="TextureRect" parent="Tab2/Control"]
 layout_mode = 0
 offset_right = 520.0
 offset_bottom = 573.0
-texture = ExtResource("2_xenha")
+texture = ExtResource("3_l15iy")
 
 [node name="table" type="Control" parent="Tab2/Control"]
 layout_mode = 3
@@ -435,308 +537,419 @@ offset_bottom = 46.0
 layout_mode = 0
 offset_left = 61.0
 offset_top = 52.0
-offset_right = 126.0
-offset_bottom = 117.0
-theme = ExtResource("10_tuv7c")
-script = ExtResource("10_ctqp5")
+offset_right = 111.0
+offset_bottom = 102.0
+theme = ExtResource("4_2waoq")
+script = ExtResource("5_a02yq")
+metadata/_edit_use_anchors_ = true
 
 [node name="1" type="Sprite2D" parent="Tab2/Control/table/12" groups=["table2"]]
 modulate = Color(0.458824, 0.486275, 0.52549, 1)
-position = Vector2(17.5, 31.5)
-texture = ExtResource("11_nl8vm")
+position = Vector2(12.5, 24.5)
+texture = ExtResource("6_bml2f")
 
 [node name="2" type="Sprite2D" parent="Tab2/Control/table/12" groups=["table2"]]
 modulate = Color(0.458824, 0.486275, 0.52549, 1)
-position = Vector2(43.5, 31.5)
-texture = ExtResource("12_q3bg5")
+position = Vector2(35, 25)
+texture = ExtResource("7_dhqic")
 
 [node name="23" type="Button" parent="Tab2/Control/table"]
 layout_mode = 0
-offset_left = 138.0
+offset_left = 122.0
 offset_top = 52.0
-offset_right = 203.0
-offset_bottom = 117.0
-theme = ExtResource("10_tuv7c")
-script = ExtResource("10_ctqp5")
+offset_right = 172.0
+offset_bottom = 102.0
+theme = ExtResource("4_2waoq")
+script = ExtResource("5_a02yq")
 
 [node name="2" type="Sprite2D" parent="Tab2/Control/table/23" groups=["table2"]]
 modulate = Color(0.458824, 0.486275, 0.52549, 1)
-position = Vector2(19.5, 32.5)
-texture = ExtResource("12_q3bg5")
+position = Vector2(12.5, 25.5)
+texture = ExtResource("7_dhqic")
 
 [node name="3" type="Sprite2D" parent="Tab2/Control/table/23" groups=["table2"]]
 modulate = Color(0.458824, 0.486275, 0.52549, 1)
-position = Vector2(45.5, 32.5)
-texture = ExtResource("13_iqwhy")
+position = Vector2(36, 25)
+texture = ExtResource("8_n8ysj")
 
 [node name="34" type="Button" parent="Tab2/Control/table"]
 layout_mode = 0
-offset_left = 217.0
+offset_left = 185.0
 offset_top = 52.0
-offset_right = 282.0
-offset_bottom = 117.0
-theme = ExtResource("10_tuv7c")
-script = ExtResource("10_ctqp5")
+offset_right = 235.0
+offset_bottom = 102.0
+theme = ExtResource("4_2waoq")
+script = ExtResource("5_a02yq")
 
 [node name="3" type="Sprite2D" parent="Tab2/Control/table/34" groups=["table2"]]
 modulate = Color(0.458824, 0.486275, 0.52549, 1)
-position = Vector2(19.5, 33.5)
-texture = ExtResource("13_iqwhy")
+position = Vector2(12.5, 26.5)
+texture = ExtResource("8_n8ysj")
 
 [node name="4" type="Sprite2D" parent="Tab2/Control/table/34" groups=["table2"]]
 modulate = Color(0.458824, 0.486275, 0.52549, 1)
-position = Vector2(45.5, 33.5)
-texture = ExtResource("14_ff3wo")
+position = Vector2(35, 26)
+texture = ExtResource("9_4f4ri")
 
 [node name="45" type="Button" parent="Tab2/Control/table"]
 layout_mode = 0
-offset_left = 294.0
-offset_top = 51.0
-offset_right = 359.0
-offset_bottom = 116.0
-theme = ExtResource("10_tuv7c")
-script = ExtResource("10_ctqp5")
+offset_left = 246.0
+offset_top = 52.0
+offset_right = 296.0
+offset_bottom = 102.0
+theme = ExtResource("4_2waoq")
+script = ExtResource("5_a02yq")
 
 [node name="4" type="Sprite2D" parent="Tab2/Control/table/45" groups=["table2"]]
 modulate = Color(0.458824, 0.486275, 0.52549, 1)
-position = Vector2(19.5, 32.5)
-texture = ExtResource("14_ff3wo")
+position = Vector2(12.5, 26.5)
+texture = ExtResource("9_4f4ri")
 
 [node name="5" type="Sprite2D" parent="Tab2/Control/table/45" groups=["table2"]]
 modulate = Color(0.458824, 0.486275, 0.52549, 1)
-position = Vector2(45.5, 32.5)
-texture = ExtResource("15_fg5e0")
+position = Vector2(35, 26.5)
+texture = ExtResource("10_sikh4")
+
+[node name="56" type="Button" parent="Tab2/Control/table"]
+layout_mode = 0
+offset_left = 309.0
+offset_top = 52.0
+offset_right = 359.0
+offset_bottom = 102.0
+theme = ExtResource("4_2waoq")
+script = ExtResource("5_a02yq")
+
+[node name="5" type="Sprite2D" parent="Tab2/Control/table/56" groups=["table2"]]
+modulate = Color(0.458824, 0.486275, 0.52549, 1)
+position = Vector2(12.5, 24.5)
+texture = ExtResource("10_sikh4")
+
+[node name="6" type="Sprite2D" parent="Tab2/Control/table/56" groups=["table2"]]
+modulate = Color(0.458824, 0.486275, 0.52549, 1)
+position = Vector2(35, 24)
+texture = ExtResource("11_idyw4")
 
 [node name="13" type="Button" parent="Tab2/Control/table"]
 layout_mode = 0
-offset_left = 61.0
-offset_top = 130.0
-offset_right = 126.0
-offset_bottom = 195.0
-theme = ExtResource("10_tuv7c")
-script = ExtResource("10_ctqp5")
+offset_left = 60.0
+offset_top = 113.0
+offset_right = 110.0
+offset_bottom = 163.0
+theme = ExtResource("4_2waoq")
+script = ExtResource("5_a02yq")
 
 [node name="1" type="Sprite2D" parent="Tab2/Control/table/13" groups=["table2"]]
 modulate = Color(0.458824, 0.486275, 0.52549, 1)
-position = Vector2(18.5, 33.5)
-texture = ExtResource("11_nl8vm")
+position = Vector2(12.5, 25)
+texture = ExtResource("6_bml2f")
 
 [node name="3" type="Sprite2D" parent="Tab2/Control/table/13" groups=["table2"]]
 modulate = Color(0.458824, 0.486275, 0.52549, 1)
-position = Vector2(44.5, 33.5)
-texture = ExtResource("13_iqwhy")
+position = Vector2(36, 25)
+texture = ExtResource("8_n8ysj")
 
 [node name="24" type="Button" parent="Tab2/Control/table"]
 layout_mode = 0
-offset_left = 139.0
-offset_top = 130.0
-offset_right = 204.0
-offset_bottom = 195.0
-theme = ExtResource("10_tuv7c")
-script = ExtResource("10_ctqp5")
+offset_left = 122.0
+offset_top = 113.0
+offset_right = 172.0
+offset_bottom = 163.0
+theme = ExtResource("4_2waoq")
+script = ExtResource("5_a02yq")
 
 [node name="2" type="Sprite2D" parent="Tab2/Control/table/24" groups=["table2"]]
 modulate = Color(0.458824, 0.486275, 0.52549, 1)
-position = Vector2(19.5, 33.5)
-texture = ExtResource("12_q3bg5")
+position = Vector2(13, 24)
+texture = ExtResource("7_dhqic")
 
 [node name="4" type="Sprite2D" parent="Tab2/Control/table/24" groups=["table2"]]
 modulate = Color(0.458824, 0.486275, 0.52549, 1)
-position = Vector2(45.5, 33.5)
-texture = ExtResource("14_ff3wo")
+position = Vector2(36, 24)
+texture = ExtResource("9_4f4ri")
 
 [node name="35" type="Button" parent="Tab2/Control/table"]
 layout_mode = 0
-offset_left = 217.0
-offset_top = 130.0
-offset_right = 282.0
-offset_bottom = 195.0
-theme = ExtResource("10_tuv7c")
-script = ExtResource("10_ctqp5")
+offset_left = 184.0
+offset_top = 113.0
+offset_right = 234.0
+offset_bottom = 163.0
+theme = ExtResource("4_2waoq")
+script = ExtResource("5_a02yq")
 
 [node name="3" type="Sprite2D" parent="Tab2/Control/table/35" groups=["table2"]]
 modulate = Color(0.458824, 0.486275, 0.52549, 1)
-position = Vector2(19.5, 33.5)
-texture = ExtResource("13_iqwhy")
+position = Vector2(13.5, 25)
+texture = ExtResource("8_n8ysj")
 
 [node name="5" type="Sprite2D" parent="Tab2/Control/table/35" groups=["table2"]]
 modulate = Color(0.458824, 0.486275, 0.52549, 1)
-position = Vector2(45.5, 33.5)
-texture = ExtResource("15_fg5e0")
+position = Vector2(36, 25)
+texture = ExtResource("10_sikh4")
+
+[node name="46" type="Button" parent="Tab2/Control/table"]
+layout_mode = 0
+offset_left = 246.0
+offset_top = 114.0
+offset_right = 296.0
+offset_bottom = 164.0
+theme = ExtResource("4_2waoq")
+script = ExtResource("5_a02yq")
+
+[node name="4" type="Sprite2D" parent="Tab2/Control/table/46" groups=["table2"]]
+modulate = Color(0.458824, 0.486275, 0.52549, 1)
+position = Vector2(12.5, 24.5)
+texture = ExtResource("9_4f4ri")
+
+[node name="6" type="Sprite2D" parent="Tab2/Control/table/46" groups=["table2"]]
+modulate = Color(0.458824, 0.486275, 0.52549, 1)
+position = Vector2(35, 25)
+texture = ExtResource("11_idyw4")
 
 [node name="14" type="Button" parent="Tab2/Control/table"]
 layout_mode = 0
-offset_left = 61.0
-offset_top = 208.0
-offset_right = 126.0
-offset_bottom = 273.0
-theme = ExtResource("10_tuv7c")
-script = ExtResource("10_ctqp5")
+offset_left = 60.0
+offset_top = 176.0
+offset_right = 110.0
+offset_bottom = 226.0
+theme = ExtResource("4_2waoq")
+script = ExtResource("5_a02yq")
 
 [node name="1" type="Sprite2D" parent="Tab2/Control/table/14" groups=["table2"]]
 modulate = Color(0.458824, 0.486275, 0.52549, 1)
-position = Vector2(19.5, 35.5)
-texture = ExtResource("11_nl8vm")
+position = Vector2(12.5, 26)
+texture = ExtResource("6_bml2f")
 
 [node name="4" type="Sprite2D" parent="Tab2/Control/table/14" groups=["table2"]]
 modulate = Color(0.458824, 0.486275, 0.52549, 1)
-position = Vector2(45.5, 35.5)
-texture = ExtResource("14_ff3wo")
+position = Vector2(35, 25.5)
+texture = ExtResource("9_4f4ri")
 
 [node name="25" type="Button" parent="Tab2/Control/table"]
 layout_mode = 0
-offset_left = 138.0
-offset_top = 208.0
-offset_right = 203.0
-offset_bottom = 273.0
-theme = ExtResource("10_tuv7c")
-script = ExtResource("10_ctqp5")
+offset_left = 122.0
+offset_top = 175.0
+offset_right = 172.0
+offset_bottom = 225.0
+theme = ExtResource("4_2waoq")
+script = ExtResource("5_a02yq")
 
 [node name="2" type="Sprite2D" parent="Tab2/Control/table/25" groups=["table2"]]
 modulate = Color(0.458824, 0.486275, 0.52549, 1)
-position = Vector2(19.5, 35.5)
-texture = ExtResource("12_q3bg5")
+position = Vector2(12.5, 24)
+texture = ExtResource("7_dhqic")
 
 [node name="5" type="Sprite2D" parent="Tab2/Control/table/25" groups=["table2"]]
 modulate = Color(0.458824, 0.486275, 0.52549, 1)
-position = Vector2(45.5, 35.5)
-texture = ExtResource("15_fg5e0")
+position = Vector2(36, 23.5)
+texture = ExtResource("10_sikh4")
+
+[node name="36" type="Button" parent="Tab2/Control/table"]
+layout_mode = 0
+offset_left = 184.0
+offset_top = 175.0
+offset_right = 234.0
+offset_bottom = 225.0
+theme = ExtResource("4_2waoq")
+script = ExtResource("5_a02yq")
+
+[node name="3" type="Sprite2D" parent="Tab2/Control/table/36" groups=["table2"]]
+modulate = Color(0.458824, 0.486275, 0.52549, 1)
+position = Vector2(12.5, 24.5)
+texture = ExtResource("8_n8ysj")
+
+[node name="6" type="Sprite2D" parent="Tab2/Control/table/36" groups=["table2"]]
+modulate = Color(0.458824, 0.486275, 0.52549, 1)
+position = Vector2(35, 25)
+texture = ExtResource("11_idyw4")
 
 [node name="15" type="Button" parent="Tab2/Control/table"]
 layout_mode = 0
 offset_left = 60.0
-offset_top = 286.0
-offset_right = 125.0
-offset_bottom = 351.0
-theme = ExtResource("10_tuv7c")
-script = ExtResource("10_ctqp5")
+offset_top = 237.0
+offset_right = 110.0
+offset_bottom = 287.0
+theme = ExtResource("4_2waoq")
+script = ExtResource("5_a02yq")
 
 [node name="1" type="Sprite2D" parent="Tab2/Control/table/15" groups=["table2"]]
 modulate = Color(0.458824, 0.486275, 0.52549, 1)
-position = Vector2(19.5, 33.5)
-texture = ExtResource("11_nl8vm")
+position = Vector2(14.5, 26.5)
+texture = ExtResource("6_bml2f")
 
 [node name="5" type="Sprite2D" parent="Tab2/Control/table/15" groups=["table2"]]
 modulate = Color(0.458824, 0.486275, 0.52549, 1)
-position = Vector2(45.5, 33.5)
-texture = ExtResource("15_fg5e0")
+position = Vector2(36, 26.5)
+texture = ExtResource("10_sikh4")
+
+[node name="26" type="Button" parent="Tab2/Control/table"]
+layout_mode = 0
+offset_left = 122.0
+offset_top = 237.0
+offset_right = 172.0
+offset_bottom = 287.0
+theme = ExtResource("4_2waoq")
+script = ExtResource("5_a02yq")
+
+[node name="2" type="Sprite2D" parent="Tab2/Control/table/26" groups=["table2"]]
+modulate = Color(0.458824, 0.486275, 0.52549, 1)
+position = Vector2(12.5, 24.5)
+texture = ExtResource("7_dhqic")
+
+[node name="6" type="Sprite2D" parent="Tab2/Control/table/26" groups=["table2"]]
+modulate = Color(0.458824, 0.486275, 0.52549, 1)
+position = Vector2(35, 25)
+texture = ExtResource("11_idyw4")
+
+[node name="16" type="Button" parent="Tab2/Control/table"]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 299.0
+offset_right = 110.0
+offset_bottom = 349.0
+theme = ExtResource("4_2waoq")
+script = ExtResource("5_a02yq")
+
+[node name="1" type="Sprite2D" parent="Tab2/Control/table/16" groups=["table2"]]
+modulate = Color(0.458824, 0.486275, 0.52549, 1)
+position = Vector2(12.5, 24.5)
+texture = ExtResource("6_bml2f")
+
+[node name="6" type="Sprite2D" parent="Tab2/Control/table/16" groups=["table2"]]
+modulate = Color(0.458824, 0.486275, 0.52549, 1)
+position = Vector2(35, 25)
+texture = ExtResource("11_idyw4")
 
 [node name="Confirmed Hacker" type="Area2D" parent="Tab2/Control"]
-position = Vector2(-4, -56)
+position = Vector2(-6, -58)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tab2/Control/Confirmed Hacker"]
 position = Vector2(134, 566.5)
-shape = SubResource("RectangleShape2D_j6c40")
+shape = SubResource("RectangleShape2D_7uivy")
 
 [node name="Confirmed Agent" type="Area2D" parent="Tab2/Control"]
 position = Vector2(-5, -52)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tab2/Control/Confirmed Agent"]
 position = Vector2(385.5, 558.5)
-shape = SubResource("RectangleShape2D_ipe68")
+shape = SubResource("RectangleShape2D_e2too")
 
 [node name="Uncertain" type="Area2D" parent="Tab2/Control"]
 position = Vector2(-3, -53)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tab2/Control/Uncertain"]
 position = Vector2(259.75, 458.5)
-shape = SubResource("RectangleShape2D_qthxr")
+shape = SubResource("RectangleShape2D_uwcjp")
 
 [node name="1" type="Area2D" parent="Tab2" groups=["cards2"]]
-position = Vector2(39, 384)
-script = ExtResource("7_yampo")
+position = Vector2(29, 385)
+script = ExtResource("11_8jayk")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tab2/1"]
 position = Vector2(21.5, 21.5)
-shape = SubResource("RectangleShape2D_6f1mt")
+shape = SubResource("RectangleShape2D_by85s")
 
 [node name="Button" type="Button" parent="Tab2/1"]
 process_mode = 4
 offset_right = 43.0
 offset_bottom = 43.0
-theme = ExtResource("10_tuv7c")
-icon = ExtResource("11_nl8vm")
+theme = ExtResource("4_2waoq")
+icon = ExtResource("6_bml2f")
 
 [node name="2" type="Area2D" parent="Tab2" groups=["cards2"]]
-position = Vector2(120, 390)
-script = ExtResource("7_yampo")
+position = Vector2(83, 384)
+script = ExtResource("11_8jayk")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tab2/2"]
 position = Vector2(21.5, 21.5)
-shape = SubResource("RectangleShape2D_6f1mt")
+shape = SubResource("RectangleShape2D_by85s")
 
 [node name="Button" type="Button" parent="Tab2/2"]
 process_mode = 4
 offset_right = 43.0
 offset_bottom = 43.0
-theme = ExtResource("10_tuv7c")
-icon = ExtResource("12_q3bg5")
+theme = ExtResource("4_2waoq")
+icon = ExtResource("7_dhqic")
 
 [node name="3" type="Area2D" parent="Tab2" groups=["cards2"]]
 position = Vector2(327, 395)
-script = ExtResource("7_yampo")
+script = ExtResource("11_8jayk")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tab2/3"]
 position = Vector2(21.5, 21.5)
-shape = SubResource("RectangleShape2D_6f1mt")
+shape = SubResource("RectangleShape2D_by85s")
 
 [node name="Button" type="Button" parent="Tab2/3"]
 process_mode = 4
 offset_right = 40.0
 offset_bottom = 40.0
-theme = ExtResource("10_tuv7c")
-icon = ExtResource("13_iqwhy")
+theme = ExtResource("4_2waoq")
+icon = ExtResource("8_n8ysj")
 
 [node name="4" type="Area2D" parent="Tab2" groups=["cards2"]]
 position = Vector2(378, 388)
-script = ExtResource("7_yampo")
+script = ExtResource("11_8jayk")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tab2/4"]
 position = Vector2(21.5, 21.5)
-shape = SubResource("RectangleShape2D_6f1mt")
+shape = SubResource("RectangleShape2D_by85s")
 
 [node name="Button" type="Button" parent="Tab2/4"]
 process_mode = 4
 offset_right = 40.0
 offset_bottom = 40.0
-theme = ExtResource("10_tuv7c")
-icon = ExtResource("14_ff3wo")
+theme = ExtResource("4_2waoq")
+icon = ExtResource("9_4f4ri")
 
 [node name="5" type="Area2D" parent="Tab2" groups=["cards2"]]
 position = Vector2(438, 394)
-script = ExtResource("7_yampo")
+script = ExtResource("11_8jayk")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tab2/5"]
 position = Vector2(21.5, 21.5)
-shape = SubResource("RectangleShape2D_6f1mt")
+shape = SubResource("RectangleShape2D_by85s")
 
 [node name="Button" type="Button" parent="Tab2/5"]
 process_mode = 4
 offset_right = 40.0
 offset_bottom = 40.0
-theme = ExtResource("10_tuv7c")
-icon = ExtResource("15_fg5e0")
+theme = ExtResource("4_2waoq")
+icon = ExtResource("10_sikh4")
+
+[node name="6" type="Area2D" parent="Tab2" groups=["cards2"]]
+position = Vector2(222, 383)
+script = ExtResource("11_8jayk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tab2/6"]
+position = Vector2(21.5, 21.5)
+shape = SubResource("RectangleShape2D_28sgv")
+
+[node name="Button" type="Button" parent="Tab2/6"]
+process_mode = 4
+offset_right = 40.0
+offset_bottom = 40.0
+theme = ExtResource("4_2waoq")
+icon = ExtResource("11_idyw4")
 
 [node name="original" type="Button" parent="."]
 offset_left = 30.0
 offset_right = 275.0
 offset_bottom = 30.0
-theme = ExtResource("4_bi0v6")
+theme = ExtResource("12_d862y")
 text = "original"
-script = ExtResource("3_3fvoa")
+script = ExtResource("13_3ast5")
 
 [node name="unoriginal" type="Button" parent="."]
 offset_left = 275.0
 offset_right = 520.0
 offset_bottom = 30.0
-theme = ExtResource("2_n760x")
+theme = ExtResource("14_nypx7")
 text = "unoriginal"
-script = ExtResource("3_3fvoa")
+script = ExtResource("13_3ast5")
 
 [node name="Button" type="Button" parent="."]
 offset_right = 30.0
 offset_bottom = 30.0
-theme = ExtResource("4_bi0v6")
+theme = ExtResource("12_d862y")
 text = "<"
 
 [node name="NotePad" type="Control" parent="."]
@@ -752,7 +965,7 @@ modulate = Color(1, 1, 1, 0.741176)
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
-texture = ExtResource("15_552sl")
+texture = ExtResource("15_yscgn")
 
 [node name="TextEdit" type="TextEdit" parent="NotePad"]
 layout_mode = 0
@@ -770,21 +983,26 @@ offset_top = 40.0
 offset_right = 509.0
 offset_bottom = 74.0
 theme = SubResource("Theme_pvfsh")
-icon = ExtResource("15_uu077")
+icon = ExtResource("16_mq8ck")
 icon_alignment = 1
 expand_icon = true
-script = ExtResource("17_b4aa5")
+script = ExtResource("17_u0kbb")
 
 [connection signal="pressed" from="Tab1/Control/table/12" to="Tab1/Control/table/12" method="_on_pressed"]
 [connection signal="pressed" from="Tab1/Control/table/23" to="Tab1/Control/table/23" method="_on_pressed"]
 [connection signal="pressed" from="Tab1/Control/table/34" to="Tab1/Control/table/34" method="_on_pressed"]
 [connection signal="pressed" from="Tab1/Control/table/45" to="Tab1/Control/table/45" method="_on_pressed"]
+[connection signal="pressed" from="Tab1/Control/table/56" to="Tab1/Control/table/56" method="_on_pressed"]
 [connection signal="pressed" from="Tab1/Control/table/13" to="Tab1/Control/table/13" method="_on_pressed"]
 [connection signal="pressed" from="Tab1/Control/table/24" to="Tab1/Control/table/24" method="_on_pressed"]
 [connection signal="pressed" from="Tab1/Control/table/35" to="Tab1/Control/table/35" method="_on_pressed"]
+[connection signal="pressed" from="Tab1/Control/table/46" to="Tab1/Control/table/46" method="_on_pressed"]
 [connection signal="pressed" from="Tab1/Control/table/14" to="Tab1/Control/table/14" method="_on_pressed"]
 [connection signal="pressed" from="Tab1/Control/table/25" to="Tab1/Control/table/25" method="_on_pressed"]
+[connection signal="pressed" from="Tab1/Control/table/36" to="Tab1/Control/table/36" method="_on_pressed"]
 [connection signal="pressed" from="Tab1/Control/table/15" to="Tab1/Control/table/15" method="_on_pressed"]
+[connection signal="pressed" from="Tab1/Control/table/26" to="Tab1/Control/table/26" method="_on_pressed"]
+[connection signal="pressed" from="Tab1/Control/table/16" to="Tab1/Control/table/16" method="_on_pressed"]
 [connection signal="area_entered" from="Tab1/1" to="Tab1/1" method="_on_area_entered"]
 [connection signal="area_exited" from="Tab1/1" to="Tab1/1" method="_on_area_exited"]
 [connection signal="mouse_entered" from="Tab1/1" to="Tab1/1" method="_on_mouse_entered"]
@@ -805,16 +1023,25 @@ script = ExtResource("17_b4aa5")
 [connection signal="area_exited" from="Tab1/5" to="Tab1/5" method="_on_area_exited"]
 [connection signal="mouse_entered" from="Tab1/5" to="Tab1/5" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="Tab1/5" to="Tab1/5" method="_on_mouse_exited"]
+[connection signal="area_entered" from="Tab1/6" to="Tab1/6" method="_on_area_entered"]
+[connection signal="area_exited" from="Tab1/6" to="Tab1/6" method="_on_area_exited"]
+[connection signal="mouse_entered" from="Tab1/6" to="Tab1/6" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Tab1/6" to="Tab1/6" method="_on_mouse_exited"]
 [connection signal="pressed" from="Tab2/Control/table/12" to="Tab2/Control/table/12" method="_on_pressed"]
 [connection signal="pressed" from="Tab2/Control/table/23" to="Tab2/Control/table/23" method="_on_pressed"]
 [connection signal="pressed" from="Tab2/Control/table/34" to="Tab2/Control/table/34" method="_on_pressed"]
 [connection signal="pressed" from="Tab2/Control/table/45" to="Tab2/Control/table/45" method="_on_pressed"]
+[connection signal="pressed" from="Tab2/Control/table/56" to="Tab2/Control/table/56" method="_on_pressed"]
 [connection signal="pressed" from="Tab2/Control/table/13" to="Tab2/Control/table/13" method="_on_pressed"]
 [connection signal="pressed" from="Tab2/Control/table/24" to="Tab2/Control/table/24" method="_on_pressed"]
 [connection signal="pressed" from="Tab2/Control/table/35" to="Tab2/Control/table/35" method="_on_pressed"]
+[connection signal="pressed" from="Tab2/Control/table/46" to="Tab2/Control/table/46" method="_on_pressed"]
 [connection signal="pressed" from="Tab2/Control/table/14" to="Tab2/Control/table/14" method="_on_pressed"]
 [connection signal="pressed" from="Tab2/Control/table/25" to="Tab2/Control/table/25" method="_on_pressed"]
+[connection signal="pressed" from="Tab2/Control/table/36" to="Tab2/Control/table/36" method="_on_pressed"]
 [connection signal="pressed" from="Tab2/Control/table/15" to="Tab2/Control/table/15" method="_on_pressed"]
+[connection signal="pressed" from="Tab2/Control/table/26" to="Tab2/Control/table/26" method="_on_pressed"]
+[connection signal="pressed" from="Tab2/Control/table/16" to="Tab2/Control/table/16" method="_on_pressed"]
 [connection signal="area_entered" from="Tab2/1" to="Tab2/1" method="_on_area_entered"]
 [connection signal="area_exited" from="Tab2/1" to="Tab2/1" method="_on_area_exited"]
 [connection signal="mouse_entered" from="Tab2/1" to="Tab2/1" method="_on_mouse_entered"]
@@ -835,6 +1062,10 @@ script = ExtResource("17_b4aa5")
 [connection signal="area_exited" from="Tab2/5" to="Tab2/5" method="_on_area_exited"]
 [connection signal="mouse_entered" from="Tab2/5" to="Tab2/5" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="Tab2/5" to="Tab2/5" method="_on_mouse_exited"]
+[connection signal="area_entered" from="Tab2/6" to="Tab2/6" method="_on_area_entered"]
+[connection signal="area_exited" from="Tab2/6" to="Tab2/6" method="_on_area_exited"]
+[connection signal="mouse_entered" from="Tab2/6" to="Tab2/6" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Tab2/6" to="Tab2/6" method="_on_mouse_exited"]
 [connection signal="pressed" from="original" to="original" method="_on_pressed"]
 [connection signal="pressed" from="unoriginal" to="unoriginal" method="_on_pressed"]
 [connection signal="pressed" from="Button" to="." method="goBack"]

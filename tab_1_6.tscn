@@ -1,0 +1,493 @@
+[gd_scene load_steps=17 format=3 uid="uid://orn1w5nygxhc"]
+
+[ext_resource type="Script" path="res://scene2.cs" id="1_2a36m"]
+[ext_resource type="Texture2D" uid="uid://e25oycl2enfo" path="res://junk/backgroundTopLeft6.png" id="2_bmvc3"]
+[ext_resource type="Theme" uid="uid://b05l8sqvhvpu7" path="res://junk/themes/tableButtons.tres" id="3_jsn6l"]
+[ext_resource type="Script" path="res://block.cs" id="4_7cyob"]
+[ext_resource type="Texture2D" uid="uid://p025a3ija0fv" path="res://junk/numbers/n/1.png" id="5_vyj42"]
+[ext_resource type="Texture2D" uid="uid://bu47m6pncua4y" path="res://junk/numbers/n/2.png" id="6_bsshw"]
+[ext_resource type="Texture2D" uid="uid://whbygqineluu" path="res://junk/numbers/n/3.png" id="7_pco0i"]
+[ext_resource type="Texture2D" uid="uid://jfoa5y3kkt0p" path="res://junk/numbers/n/4.png" id="8_rkaxw"]
+[ext_resource type="Texture2D" uid="uid://blyvb0c1w4414" path="res://junk/numbers/n/5.png" id="9_14y04"]
+[ext_resource type="Texture2D" uid="uid://cxlss7s8jjwem" path="res://junk/numbers/n/6.png" id="10_h3bmd"]
+[ext_resource type="Script" path="res://cards.cs" id="11_wnvf2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7uivy"]
+size = Vector2(194, 83)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e2too"]
+size = Vector2(197, 79)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uwcjp"]
+size = Vector2(464.5, 33)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_by85s"]
+size = Vector2(41, 43)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_28sgv"]
+size = Vector2(41, 43)
+
+[node name="Tab1" type="Node2D"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_2a36m")
+
+[node name="TextureRect" type="TextureRect" parent="Control"]
+layout_mode = 0
+offset_right = 520.0
+offset_bottom = 573.0
+texture = ExtResource("2_bmvc3")
+
+[node name="table" type="Control" parent="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -33.0
+offset_top = 6.0
+offset_right = -31.0
+offset_bottom = 46.0
+
+[node name="12" type="Button" parent="Control/table"]
+layout_mode = 0
+offset_left = 61.0
+offset_top = 52.0
+offset_right = 111.0
+offset_bottom = 102.0
+theme = ExtResource("3_jsn6l")
+script = ExtResource("4_7cyob")
+
+[node name="1" type="Sprite2D" parent="Control/table/12" groups=["table1"]]
+modulate = Color(0.458824, 0.486275, 0.52549, 1)
+position = Vector2(12.5, 24.5)
+texture = ExtResource("5_vyj42")
+
+[node name="2" type="Sprite2D" parent="Control/table/12" groups=["table1"]]
+modulate = Color(0.458824, 0.486275, 0.52549, 1)
+position = Vector2(35, 25)
+texture = ExtResource("6_bsshw")
+
+[node name="23" type="Button" parent="Control/table"]
+layout_mode = 0
+offset_left = 122.0
+offset_top = 52.0
+offset_right = 172.0
+offset_bottom = 102.0
+theme = ExtResource("3_jsn6l")
+script = ExtResource("4_7cyob")
+
+[node name="2" type="Sprite2D" parent="Control/table/23" groups=["table1"]]
+modulate = Color(0.458824, 0.486275, 0.52549, 1)
+position = Vector2(12.5, 25.5)
+texture = ExtResource("6_bsshw")
+
+[node name="3" type="Sprite2D" parent="Control/table/23" groups=["table1"]]
+modulate = Color(0.458824, 0.486275, 0.52549, 1)
+position = Vector2(36, 25)
+texture = ExtResource("7_pco0i")
+
+[node name="34" type="Button" parent="Control/table"]
+layout_mode = 0
+offset_left = 185.0
+offset_top = 52.0
+offset_right = 235.0
+offset_bottom = 102.0
+theme = ExtResource("3_jsn6l")
+script = ExtResource("4_7cyob")
+
+[node name="3" type="Sprite2D" parent="Control/table/34" groups=["table1"]]
+modulate = Color(0.458824, 0.486275, 0.52549, 1)
+position = Vector2(12.5, 26.5)
+texture = ExtResource("7_pco0i")
+
+[node name="4" type="Sprite2D" parent="Control/table/34" groups=["table1"]]
+modulate = Color(0.458824, 0.486275, 0.52549, 1)
+position = Vector2(35, 26)
+texture = ExtResource("8_rkaxw")
+
+[node name="45" type="Button" parent="Control/table"]
+layout_mode = 0
+offset_left = 246.0
+offset_top = 52.0
+offset_right = 296.0
+offset_bottom = 102.0
+theme = ExtResource("3_jsn6l")
+script = ExtResource("4_7cyob")
+
+[node name="4" type="Sprite2D" parent="Control/table/45" groups=["table1"]]
+modulate = Color(0.458824, 0.486275, 0.52549, 1)
+position = Vector2(12.5, 26.5)
+texture = ExtResource("8_rkaxw")
+
+[node name="5" type="Sprite2D" parent="Control/table/45" groups=["table1"]]
+modulate = Color(0.458824, 0.486275, 0.52549, 1)
+position = Vector2(35, 26.5)
+texture = ExtResource("9_14y04")
+
+[node name="56" type="Button" parent="Control/table"]
+offset_left = 309.0
+offset_top = 52.0
+offset_right = 359.0
+offset_bottom = 102.0
+theme = ExtResource("3_jsn6l")
+script = ExtResource("4_7cyob")
+
+[node name="5" type="Sprite2D" parent="Control/table/56" groups=["table1"]]
+modulate = Color(0.458824, 0.486275, 0.52549, 1)
+position = Vector2(12.5, 24.5)
+texture = ExtResource("9_14y04")
+
+[node name="6" type="Sprite2D" parent="Control/table/56" groups=["table1"]]
+modulate = Color(0.458824, 0.486275, 0.52549, 1)
+position = Vector2(35, 24)
+texture = ExtResource("10_h3bmd")
+
+[node name="13" type="Button" parent="Control/table"]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 113.0
+offset_right = 110.0
+offset_bottom = 163.0
+theme = ExtResource("3_jsn6l")
+script = ExtResource("4_7cyob")
+
+[node name="1" type="Sprite2D" parent="Control/table/13" groups=["table1"]]
+modulate = Color(0.458824, 0.486275, 0.52549, 1)
+position = Vector2(12.5, 25)
+texture = ExtResource("5_vyj42")
+
+[node name="3" type="Sprite2D" parent="Control/table/13" groups=["table1"]]
+modulate = Color(0.458824, 0.486275, 0.52549, 1)
+position = Vector2(36, 25)
+texture = ExtResource("7_pco0i")
+
+[node name="24" type="Button" parent="Control/table"]
+layout_mode = 0
+offset_left = 122.0
+offset_top = 113.0
+offset_right = 172.0
+offset_bottom = 163.0
+theme = ExtResource("3_jsn6l")
+script = ExtResource("4_7cyob")
+
+[node name="2" type="Sprite2D" parent="Control/table/24" groups=["table1"]]
+modulate = Color(0.458824, 0.486275, 0.52549, 1)
+position = Vector2(13, 24)
+texture = ExtResource("6_bsshw")
+
+[node name="4" type="Sprite2D" parent="Control/table/24" groups=["table1"]]
+modulate = Color(0.458824, 0.486275, 0.52549, 1)
+position = Vector2(36, 24)
+texture = ExtResource("8_rkaxw")
+
+[node name="35" type="Button" parent="Control/table"]
+layout_mode = 0
+offset_left = 184.0
+offset_top = 113.0
+offset_right = 234.0
+offset_bottom = 163.0
+theme = ExtResource("3_jsn6l")
+script = ExtResource("4_7cyob")
+
+[node name="3" type="Sprite2D" parent="Control/table/35" groups=["table1"]]
+modulate = Color(0.458824, 0.486275, 0.52549, 1)
+position = Vector2(13.5, 25)
+texture = ExtResource("7_pco0i")
+
+[node name="5" type="Sprite2D" parent="Control/table/35" groups=["table1"]]
+modulate = Color(0.458824, 0.486275, 0.52549, 1)
+position = Vector2(36, 25)
+texture = ExtResource("9_14y04")
+
+[node name="46" type="Button" parent="Control/table"]
+layout_mode = 0
+offset_left = 246.0
+offset_top = 114.0
+offset_right = 296.0
+offset_bottom = 164.0
+theme = ExtResource("3_jsn6l")
+script = ExtResource("4_7cyob")
+
+[node name="4" type="Sprite2D" parent="Control/table/46" groups=["table1"]]
+modulate = Color(0.458824, 0.486275, 0.52549, 1)
+position = Vector2(12.5, 24.5)
+texture = ExtResource("8_rkaxw")
+
+[node name="6" type="Sprite2D" parent="Control/table/46" groups=["table1"]]
+modulate = Color(0.458824, 0.486275, 0.52549, 1)
+position = Vector2(35, 25)
+texture = ExtResource("10_h3bmd")
+
+[node name="14" type="Button" parent="Control/table"]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 176.0
+offset_right = 110.0
+offset_bottom = 226.0
+theme = ExtResource("3_jsn6l")
+script = ExtResource("4_7cyob")
+
+[node name="1" type="Sprite2D" parent="Control/table/14" groups=["table1"]]
+modulate = Color(0.458824, 0.486275, 0.52549, 1)
+position = Vector2(12.5, 26)
+texture = ExtResource("5_vyj42")
+
+[node name="4" type="Sprite2D" parent="Control/table/14" groups=["table1"]]
+modulate = Color(0.458824, 0.486275, 0.52549, 1)
+position = Vector2(35, 25.5)
+texture = ExtResource("8_rkaxw")
+
+[node name="25" type="Button" parent="Control/table"]
+layout_mode = 0
+offset_left = 122.0
+offset_top = 175.0
+offset_right = 172.0
+offset_bottom = 225.0
+theme = ExtResource("3_jsn6l")
+script = ExtResource("4_7cyob")
+
+[node name="2" type="Sprite2D" parent="Control/table/25" groups=["table1"]]
+modulate = Color(0.458824, 0.486275, 0.52549, 1)
+position = Vector2(12.5, 24)
+texture = ExtResource("6_bsshw")
+
+[node name="5" type="Sprite2D" parent="Control/table/25" groups=["table1"]]
+modulate = Color(0.458824, 0.486275, 0.52549, 1)
+position = Vector2(36, 23.5)
+texture = ExtResource("9_14y04")
+
+[node name="36" type="Button" parent="Control/table"]
+layout_mode = 0
+offset_left = 184.0
+offset_top = 175.0
+offset_right = 234.0
+offset_bottom = 225.0
+theme = ExtResource("3_jsn6l")
+script = ExtResource("4_7cyob")
+
+[node name="3" type="Sprite2D" parent="Control/table/36" groups=["table1"]]
+modulate = Color(0.458824, 0.486275, 0.52549, 1)
+position = Vector2(12.5, 24.5)
+texture = ExtResource("7_pco0i")
+
+[node name="6" type="Sprite2D" parent="Control/table/36" groups=["table1"]]
+modulate = Color(0.458824, 0.486275, 0.52549, 1)
+position = Vector2(35, 25)
+texture = ExtResource("10_h3bmd")
+
+[node name="15" type="Button" parent="Control/table"]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 237.0
+offset_right = 110.0
+offset_bottom = 287.0
+theme = ExtResource("3_jsn6l")
+script = ExtResource("4_7cyob")
+
+[node name="1" type="Sprite2D" parent="Control/table/15" groups=["table1"]]
+modulate = Color(0.458824, 0.486275, 0.52549, 1)
+position = Vector2(14.5, 26.5)
+texture = ExtResource("5_vyj42")
+
+[node name="5" type="Sprite2D" parent="Control/table/15" groups=["table1"]]
+modulate = Color(0.458824, 0.486275, 0.52549, 1)
+position = Vector2(36, 26.5)
+texture = ExtResource("9_14y04")
+
+[node name="26" type="Button" parent="Control/table"]
+layout_mode = 0
+offset_left = 122.0
+offset_top = 237.0
+offset_right = 172.0
+offset_bottom = 287.0
+theme = ExtResource("3_jsn6l")
+script = ExtResource("4_7cyob")
+
+[node name="2" type="Sprite2D" parent="Control/table/26" groups=["table1"]]
+modulate = Color(0.458824, 0.486275, 0.52549, 1)
+position = Vector2(12.5, 24.5)
+texture = ExtResource("6_bsshw")
+
+[node name="6" type="Sprite2D" parent="Control/table/26" groups=["table1"]]
+modulate = Color(0.458824, 0.486275, 0.52549, 1)
+position = Vector2(35, 25)
+texture = ExtResource("10_h3bmd")
+
+[node name="16" type="Button" parent="Control/table"]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 299.0
+offset_right = 110.0
+offset_bottom = 349.0
+theme = ExtResource("3_jsn6l")
+script = ExtResource("4_7cyob")
+
+[node name="1" type="Sprite2D" parent="Control/table/16" groups=["table1"]]
+modulate = Color(0.458824, 0.486275, 0.52549, 1)
+position = Vector2(12.5, 24.5)
+texture = ExtResource("5_vyj42")
+
+[node name="6" type="Sprite2D" parent="Control/table/16" groups=["table1"]]
+modulate = Color(0.458824, 0.486275, 0.52549, 1)
+position = Vector2(35, 25)
+texture = ExtResource("10_h3bmd")
+
+[node name="Confirmed Hacker" type="Area2D" parent="Control"]
+position = Vector2(-6, -58)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Control/Confirmed Hacker"]
+position = Vector2(134, 566.5)
+shape = SubResource("RectangleShape2D_7uivy")
+
+[node name="Confirmed Agent" type="Area2D" parent="Control"]
+position = Vector2(-5, -52)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Control/Confirmed Agent"]
+position = Vector2(385.5, 558.5)
+shape = SubResource("RectangleShape2D_e2too")
+
+[node name="Uncertain" type="Area2D" parent="Control"]
+position = Vector2(-3, -53)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Control/Uncertain"]
+position = Vector2(259.75, 458.5)
+shape = SubResource("RectangleShape2D_uwcjp")
+
+[node name="1" type="Area2D" parent="." groups=["cards1"]]
+position = Vector2(29, 385)
+script = ExtResource("11_wnvf2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="1"]
+position = Vector2(21.5, 21.5)
+shape = SubResource("RectangleShape2D_by85s")
+
+[node name="Button" type="Button" parent="1"]
+process_mode = 4
+offset_right = 43.0
+offset_bottom = 43.0
+theme = ExtResource("3_jsn6l")
+icon = ExtResource("5_vyj42")
+
+[node name="2" type="Area2D" parent="." groups=["cards1"]]
+position = Vector2(83, 384)
+script = ExtResource("11_wnvf2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="2"]
+position = Vector2(21.5, 21.5)
+shape = SubResource("RectangleShape2D_by85s")
+
+[node name="Button" type="Button" parent="2"]
+process_mode = 4
+offset_right = 43.0
+offset_bottom = 43.0
+theme = ExtResource("3_jsn6l")
+icon = ExtResource("6_bsshw")
+
+[node name="3" type="Area2D" parent="." groups=["cards1"]]
+position = Vector2(327, 395)
+script = ExtResource("11_wnvf2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="3"]
+position = Vector2(21.5, 21.5)
+shape = SubResource("RectangleShape2D_by85s")
+
+[node name="Button" type="Button" parent="3"]
+process_mode = 4
+offset_right = 40.0
+offset_bottom = 40.0
+theme = ExtResource("3_jsn6l")
+icon = ExtResource("7_pco0i")
+
+[node name="4" type="Area2D" parent="." groups=["cards1"]]
+position = Vector2(378, 388)
+script = ExtResource("11_wnvf2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="4"]
+position = Vector2(21.5, 21.5)
+shape = SubResource("RectangleShape2D_by85s")
+
+[node name="Button" type="Button" parent="4"]
+process_mode = 4
+offset_right = 40.0
+offset_bottom = 40.0
+theme = ExtResource("3_jsn6l")
+icon = ExtResource("8_rkaxw")
+
+[node name="5" type="Area2D" parent="." groups=["cards1"]]
+position = Vector2(438, 394)
+script = ExtResource("11_wnvf2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="5"]
+position = Vector2(21.5, 21.5)
+shape = SubResource("RectangleShape2D_by85s")
+
+[node name="Button" type="Button" parent="5"]
+process_mode = 4
+offset_right = 40.0
+offset_bottom = 40.0
+theme = ExtResource("3_jsn6l")
+icon = ExtResource("9_14y04")
+
+[node name="6" type="Area2D" parent="." groups=["cards1"]]
+position = Vector2(222, 383)
+script = ExtResource("11_wnvf2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="6"]
+position = Vector2(21.5, 21.5)
+shape = SubResource("RectangleShape2D_28sgv")
+
+[node name="Button" type="Button" parent="6"]
+offset_right = 40.0
+offset_bottom = 40.0
+theme = ExtResource("3_jsn6l")
+icon = ExtResource("10_h3bmd")
+
+[connection signal="pressed" from="Control/table/12" to="Control/table/12" method="_on_pressed"]
+[connection signal="pressed" from="Control/table/23" to="Control/table/23" method="_on_pressed"]
+[connection signal="pressed" from="Control/table/34" to="Control/table/34" method="_on_pressed"]
+[connection signal="pressed" from="Control/table/45" to="Control/table/45" method="_on_pressed"]
+[connection signal="pressed" from="Control/table/56" to="Control/table/56" method="_on_pressed"]
+[connection signal="pressed" from="Control/table/13" to="Control/table/13" method="_on_pressed"]
+[connection signal="pressed" from="Control/table/24" to="Control/table/24" method="_on_pressed"]
+[connection signal="pressed" from="Control/table/35" to="Control/table/35" method="_on_pressed"]
+[connection signal="pressed" from="Control/table/46" to="Control/table/46" method="_on_pressed"]
+[connection signal="pressed" from="Control/table/14" to="Control/table/14" method="_on_pressed"]
+[connection signal="pressed" from="Control/table/25" to="Control/table/25" method="_on_pressed"]
+[connection signal="pressed" from="Control/table/36" to="Control/table/36" method="_on_pressed"]
+[connection signal="pressed" from="Control/table/15" to="Control/table/15" method="_on_pressed"]
+[connection signal="pressed" from="Control/table/26" to="Control/table/26" method="_on_pressed"]
+[connection signal="pressed" from="Control/table/16" to="Control/table/16" method="_on_pressed"]
+[connection signal="area_entered" from="1" to="1" method="_on_area_entered"]
+[connection signal="area_exited" from="1" to="1" method="_on_area_exited"]
+[connection signal="mouse_entered" from="1" to="1" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="1" to="1" method="_on_mouse_exited"]
+[connection signal="area_entered" from="2" to="2" method="_on_area_entered"]
+[connection signal="area_exited" from="2" to="2" method="_on_area_exited"]
+[connection signal="mouse_entered" from="2" to="2" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="2" to="2" method="_on_mouse_exited"]
+[connection signal="button_down" from="2/Button" to="2" method="_on_button_button_down"]
+[connection signal="button_up" from="2/Button" to="2" method="_on_button_button_up"]
+[connection signal="area_entered" from="3" to="3" method="_on_area_entered"]
+[connection signal="area_exited" from="3" to="3" method="_on_area_exited"]
+[connection signal="mouse_entered" from="3" to="3" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="3" to="3" method="_on_mouse_exited"]
+[connection signal="button_down" from="3/Button" to="3" method="_on_button_button_down"]
+[connection signal="button_up" from="3/Button" to="3" method="_on_button_button_up"]
+[connection signal="area_entered" from="4" to="4" method="_on_area_entered"]
+[connection signal="area_exited" from="4" to="4" method="_on_area_exited"]
+[connection signal="mouse_entered" from="4" to="4" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="4" to="4" method="_on_mouse_exited"]
+[connection signal="button_down" from="4/Button" to="4" method="_on_button_button_down"]
+[connection signal="button_up" from="4/Button" to="4" method="_on_button_button_up"]
+[connection signal="area_entered" from="5" to="5" method="_on_area_entered"]
+[connection signal="area_exited" from="5" to="5" method="_on_area_exited"]
+[connection signal="mouse_entered" from="5" to="5" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="5" to="5" method="_on_mouse_exited"]
+[connection signal="button_down" from="5/Button" to="5" method="_on_button_button_down"]
+[connection signal="button_up" from="5/Button" to="5" method="_on_button_button_up"]
+[connection signal="area_entered" from="6" to="6" method="_on_area_entered"]
+[connection signal="area_exited" from="6" to="6" method="_on_area_exited"]

@@ -15,6 +15,8 @@ public partial class Positions : Button
 
 	private void positionSelection(){
 		GetNode<Glob>("/root/Glob").myPosition = Convert.ToInt32( Name );
-		GetTree().ChangeSceneToFile("res://scene2.tscn");
+		if(GetNode<Glob>("/root/Glob").numberOfPlayer=='5') GetTree().ChangeSceneToFile("res://scene2.tscn");
+		else GetTree().ChangeSceneToFile("res://scene3.tscn");
+		
 	}
 }

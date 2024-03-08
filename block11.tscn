@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://bdsapvm8pragg"]
+
+[ext_resource type="Theme" uid="uid://b05l8sqvhvpu7" path="res://junk/themes/tableButtons.tres" id="1_hyasv"]
+[ext_resource type="Script" path="res://block.cs" id="2_1kco4"]
+[ext_resource type="Texture2D" uid="uid://p025a3ija0fv" path="res://junk/numbers/n/1.png" id="3_tg8vd"]
+[ext_resource type="Texture2D" uid="uid://bu47m6pncua4y" path="res://junk/numbers/n/2.png" id="4_u3v1b"]
+
+[node name="12" type="Button"]
+offset_left = 61.0
+offset_top = 52.0
+offset_right = 111.0
+offset_bottom = 102.0
+theme = ExtResource("1_hyasv")
+script = ExtResource("2_1kco4")
+
+[node name="1" type="Sprite2D" parent="." groups=["table1"]]
+modulate = Color(0.458824, 0.486275, 0.52549, 1)
+position = Vector2(12.5, 24.5)
+texture = ExtResource("3_tg8vd")
+
+[node name="2" type="Sprite2D" parent="." groups=["table1"]]
+modulate = Color(0.458824, 0.486275, 0.52549, 1)
+position = Vector2(35, 25)
+texture = ExtResource("4_u3v1b")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

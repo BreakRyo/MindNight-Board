@@ -10,7 +10,7 @@ public partial class cards : Area2D
 	Godot.Collections.Array<Node> tableNodes;
 	public override void _Ready()
 	{
-		tableNodes = GetTree().GetNodesInGroup("table");
+		tableNodes = GetTree().GetNodesInGroup("table"+GetParent().Name.ToString()[3]);
 	}
 
     public override void _Process(double delta)
