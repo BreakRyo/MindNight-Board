@@ -23,8 +23,10 @@ MindNight Board is a board for the game mindnight where it helps you use the pos
 
 ## Screenshots
 
-![Home](https://raw.githubusercontent.com/BreakRyo/MindNight-Board/main/screenshots/Screenshot%202024-03-07%20161612.png)
-![Board](https://raw.githubusercontent.com/BreakRyo/MindNight-Board/main/screenshots/Screenshot%202024-03-07%20161702.png)
+![Home](https://raw.githubusercontent.com/BreakRyo/MindNight-Board/main/screenshots/Screenshot%202024-03-08%20162612.png)
+![Board](https://raw.githubusercontent.com/BreakRyo/MindNight-Board/main/screenshots/Screenshot%202024-03-08%20162707.png)
+![Board](https://raw.githubusercontent.com/BreakRyo/MindNight-Board/main/screenshots/Screenshot%202024-03-08%20163229.png)
+![Board](https://raw.githubusercontent.com/BreakRyo/MindNight-Board/main/screenshots/Screenshot%202024-03-08%20163306.png)
 
 ## License
 
