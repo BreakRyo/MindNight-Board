@@ -13,7 +13,7 @@ MindNight Board is a board for the game mindnight where it helps you use the pos
 
 ## Installation
 
-[MindNight.Board.v1](https://github.com/BreakRyo/MindNight-Board/releases/tag/v.1)
+[MindNight.Board.v1.1](https://github.com/BreakRyo/MindNight-Board/releases/tag/v.1.1)
 
 ## Usage
 
