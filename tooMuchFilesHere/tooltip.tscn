@@ -1,0 +1,48 @@
+[gd_scene load_steps=5 format=3 uid="uid://btsc0q7bylyq4"]
+
+[ext_resource type="Script" path="res://tooMuchFilesHere/tooltip.cs" id="1_jy045"]
+[ext_resource type="FontFile" uid="uid://dgipriqfmli1e" path="res://junk/Pixter Display.ttf" id="1_oshcy"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mmnui"]
+bg_color = Color(0.0431373, 0.0431373, 0.0431373, 0.631373)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="Theme" id="Theme_abw8x"]
+Panel/styles/panel = SubResource("StyleBoxFlat_mmnui")
+
+[node name="tooltip" type="Panel"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -420.0
+offset_bottom = -523.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_abw8x")
+script = ExtResource("1_jy045")
+
+[node name="FirstPlayer" type="RichTextLabel" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -50.0
+offset_top = 4.0
+offset_right = 50.0
+offset_bottom = 29.0
+grow_horizontal = 2
+theme_override_fonts/normal_font = ExtResource("1_oshcy")
+bbcode_enabled = true
+text = "[center]1 : Braetonix[/center]"
+
+[node name="SecondPlayer" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_top = 27.135
+offset_right = 100.0
+offset_bottom = 52.135
+theme_override_fonts/normal_font = ExtResource("1_oshcy")
+bbcode_enabled = true
+text = "[center]2 : Situ[/center]"

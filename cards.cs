@@ -11,6 +11,8 @@ public partial class cards : Area2D
 	public override void _Ready()
 	{
 		tableNodes = GetTree().GetNodesInGroup("table"+GetParent().Name.ToString()[3]);
+		RichTextLabel cardName = (RichTextLabel)GetChild(1);
+		cardName.Text = GetNode<Glob>("/root/Glob").players[Convert.ToInt32(Name)-1].name;
 	}
 
     public override void _Process(double delta)
@@ -41,6 +43,7 @@ public partial class cards : Area2D
 
 
 	private void _on_area_entered(Area2D ar){
+		
 		foreach(var i in tableNodes){
 			if(i.Name == Name){
 				switch(ar.Name){
@@ -52,6 +55,9 @@ public partial class cards : Area2D
 					break;
 					case "Uncertain" :
 						((Sprite2D)i).Modulate = new Color("757C86");
+					break;
+					default:
+						GD.Print(ar.Name);
 					break;
 				}
 			}

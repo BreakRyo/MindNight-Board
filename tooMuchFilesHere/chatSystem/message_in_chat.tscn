@@ -1,0 +1,35 @@
+[gd_scene load_steps=8 format=3 uid="uid://c24u22h4s7ipp"]
+
+[ext_resource type="FontFile" uid="uid://dgipriqfmli1e" path="res://junk/Pixter Display.ttf" id="1_8v5tf"]
+[ext_resource type="Theme" uid="uid://bdmcrp87nwbra" path="res://tooMuchFilesHere/chatSystem/message_in_chat.tres" id="1_utnqq"]
+[ext_resource type="Script" path="res://tooMuchFilesHere/chatSystem/MessageInChat.cs" id="2_8h8m4"]
+[ext_resource type="Texture2D" uid="uid://cnxw3pdiphkly" path="res://tooMuchFilesHere/chatSystem/pin.png" id="4_jx4rd"]
+[ext_resource type="Texture2D" uid="uid://c2q55ndg68246" path="res://tooMuchFilesHere/chatSystem/unpin.png" id="5_hbjch"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_57opi"]
+
+[sub_resource type="Theme" id="Theme_a63g8"]
+CheckBox/icons/checked = ExtResource("4_jx4rd")
+CheckBox/icons/unchecked = ExtResource("5_hbjch")
+CheckBox/styles/focus = SubResource("StyleBoxEmpty_57opi")
+
+[node name="MessageInChat" type="RichTextLabel"]
+offset_right = 450.0
+offset_bottom = 8.0
+theme = ExtResource("1_utnqq")
+theme_override_fonts/normal_font = ExtResource("1_8v5tf")
+theme_override_font_sizes/normal_font_size = 20
+bbcode_enabled = true
+text = "[player]: hello."
+fit_content = true
+script = ExtResource("2_8h8m4")
+
+[node name="checkBox" type="CheckBox" parent="."]
+layout_mode = 2
+offset_left = 3.0
+offset_top = 2.0
+offset_right = 27.0
+offset_bottom = 26.0
+theme = SubResource("Theme_a63g8")
+
+[connection signal="toggled" from="checkBox" to="." method="_on_check_box_toggled"]

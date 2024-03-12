@@ -13,5 +13,7 @@ public partial class block : Button
 		}
 		visi=!visi;
 	}
+	
+
 
 }

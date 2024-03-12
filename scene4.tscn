@@ -1,0 +1,64 @@
+[gd_scene load_steps=5 format=3 uid="uid://dw1wujrlgi6rt"]
+
+[ext_resource type="Texture2D" uid="uid://dodvnr7wbfnfa" path="res://junk/backgroundTopLeft0.png" id="1_ylw8l"]
+[ext_resource type="FontFile" uid="uid://dyiqyukragyye" path="res://junk/Symtext.ttf" id="2_4m3ao"]
+[ext_resource type="Theme" uid="uid://cd37wv1dbj6gf" path="res://junk/themes/buttontheme.tres" id="3_jo636"]
+[ext_resource type="Script" path="res://goto6.cs" id="4_v2of5"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 520.0
+offset_bottom = 573.0
+texture = ExtResource("1_ylw8l")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -238.0
+offset_top = -207.368
+offset_right = 238.0
+offset_bottom = 7.44702
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_4m3ao")
+theme_override_font_sizes/font_size = 16
+text = "the game you are in seem to have more then 6 
+players which is cool, yet i didn't really
+think someone will use it to track 6 players
+all at once...
+but you still can access the pt of 6 players
+to use other tools like highlighting chat
+and taking notes.
+so good luck."
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -45.51
+offset_top = 50.313
+offset_right = 45.51
+offset_bottom = 83.778
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("3_jo636")
+text = "Access"
+script = ExtResource("4_v2of5")
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

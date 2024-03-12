@@ -7,7 +7,6 @@ public partial class scene1 : Control
 	public override void _Ready()
 	{
 		GetWindow().Position = new Vector2I(0,32);
-		GetNode<Glob>("/root/Glob").numberOfPlayer ='5';
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.

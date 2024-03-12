@@ -12,9 +12,11 @@ config_version=5
 
 config/name="MNBoard"
 run/main_scene="res://scene1.tscn"
+config/use_custom_user_dir=true
+config/custom_user_dir_name="Code Why"
 config/features=PackedStringArray("4.2", "C#", "Forward Plus")
 boot_splash/bg_color=Color(0.141176, 0.141176, 0.141176, 1)
-boot_splash/image="res://icon1.png"
+boot_splash/image="res://junk/backgroundTopLeft.png"
 config/icon="res://iconm.svg"
 
 [autoload]

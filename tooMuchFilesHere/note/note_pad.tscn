@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://m6704ng8ne81"]
+
+[ext_resource type="Texture2D" uid="uid://ccuqybdfibfu5" path="res://junk/shadow.png" id="1_325ks"]
+[ext_resource type="CodeHighlighter" uid="uid://doh20pbj2fvev" path="res://tooMuchFilesHere/chatSystem/new_code_highlighter.tres" id="2_ptgee"]
+[ext_resource type="Script" path="res://NodePad.cs" id="2_r3dkl"]
+[ext_resource type="Theme" uid="uid://cpxhh3sq8y4sx" path="res://tooMuchFilesHere/note/styleTextEdit.tres" id="2_vfg5r"]
+
+[node name="NotePad" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect" type="TextureRect" parent="."]
+modulate = Color(1, 1, 1, 0.741176)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_325ks")
+
+[node name="TextEdit" type="TextEdit" parent="."]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 40.0
+offset_right = 466.0
+offset_bottom = 560.0
+theme = ExtResource("2_vfg5r")
+placeholder_text = "Write your thoughts here..."
+syntax_highlighter = ExtResource("2_ptgee")
+script = ExtResource("2_r3dkl")

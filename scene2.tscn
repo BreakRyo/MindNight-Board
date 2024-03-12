@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=3 uid="uid://3pviqctxv60y"]
+[gd_scene load_steps=22 format=3 uid="uid://3pviqctxv60y"]
 
 [ext_resource type="Script" path="res://scene2.cs" id="1_aepph"]
 [ext_resource type="Script" path="res://node2.cs" id="1_u0dho"]
@@ -11,12 +11,11 @@
 [ext_resource type="Theme" uid="uid://b05l8sqvhvpu7" path="res://junk/themes/tableButtons.tres" id="10_tuv7c"]
 [ext_resource type="Texture2D" uid="uid://p025a3ija0fv" path="res://junk/numbers/n/1.png" id="11_nl8vm"]
 [ext_resource type="Texture2D" uid="uid://bu47m6pncua4y" path="res://junk/numbers/n/2.png" id="12_q3bg5"]
+[ext_resource type="PackedScene" uid="uid://m7u5w4udt12h" path="res://tooMuchFilesHere/CardName.tscn" id="12_wbu6h"]
 [ext_resource type="Texture2D" uid="uid://whbygqineluu" path="res://junk/numbers/n/3.png" id="13_iqwhy"]
 [ext_resource type="Texture2D" uid="uid://jfoa5y3kkt0p" path="res://junk/numbers/n/4.png" id="14_ff3wo"]
-[ext_resource type="Texture2D" uid="uid://ccuqybdfibfu5" path="res://junk/shadow.png" id="15_552sl"]
 [ext_resource type="Texture2D" uid="uid://blyvb0c1w4414" path="res://junk/numbers/n/5.png" id="15_fg5e0"]
-[ext_resource type="Texture2D" uid="uid://o8i3xf33yhie" path="res://junk/note.png" id="15_uu077"]
-[ext_resource type="Script" path="res://Note.cs" id="17_b4aa5"]
+[ext_resource type="PackedScene" uid="uid://bcqye8ab2uflg" path="res://tooMuchFilesHere/chatSystem/chat.tscn" id="20_nu3c8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7uivy"]
 size = Vector2(194, 83)
@@ -25,73 +24,42 @@ size = Vector2(194, 83)
 size = Vector2(197, 79)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uwcjp"]
-size = Vector2(464.5, 33)
+size = Vector2(464.5, 51.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_by85s"]
-size = Vector2(41, 43)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_j6c40"]
-size = Vector2(194, 83)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ipe68"]
-size = Vector2(197, 79)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_qthxr"]
-size = Vector2(464.5, 33)
+size = Vector2(100, 25)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6f1mt"]
-size = Vector2(41, 43)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7nqao"]
-content_margin_left = 9.0
-content_margin_top = 4.0
-bg_color = Color(0, 0, 0, 0.686275)
-border_width_left = 1
-border_width_top = 1
-border_width_right = 1
-border_width_bottom = 1
-border_color = Color(0.447059, 0.447059, 0.447059, 1)
-
-[sub_resource type="Theme" id="Theme_awbre"]
-TextEdit/styles/normal = SubResource("StyleBoxFlat_7nqao")
-
-[sub_resource type="CodeHighlighter" id="CodeHighlighter_ptmh0"]
-number_color = Color(0.858824, 0.211765, 0.227451, 1)
-symbol_color = Color(1, 1, 1, 1)
-function_color = Color(1, 1, 1, 1)
-member_variable_color = Color(1, 1, 1, 1)
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3ejr5"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jmnbu"]
-bg_color = Color(0.14902, 0.164706, 0.184314, 1)
-corner_radius_top_left = 3
-corner_radius_top_right = 3
-corner_radius_bottom_right = 3
-corner_radius_bottom_left = 3
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jlp3s"]
-bg_color = Color(0.00392157, 0.00392157, 0.00784314, 1)
-corner_radius_top_left = 2
-corner_radius_top_right = 2
-corner_radius_bottom_right = 2
-corner_radius_bottom_left = 2
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1kg8p"]
-bg_color = Color(0.454902, 0.482353, 0.521569, 1)
-corner_radius_top_left = 3
-corner_radius_top_right = 3
-corner_radius_bottom_right = 3
-corner_radius_bottom_left = 3
-
-[sub_resource type="Theme" id="Theme_pvfsh"]
-Button/styles/focus = SubResource("StyleBoxEmpty_3ejr5")
-Button/styles/hover = SubResource("StyleBoxFlat_jmnbu")
-Button/styles/normal = SubResource("StyleBoxFlat_jlp3s")
-Button/styles/pressed = SubResource("StyleBoxFlat_1kg8p")
+size = Vector2(100, 25)
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_u0dho")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 520.0
+offset_bottom = 573.0
+texture = ExtResource("2_xenha")
+
+[node name="Confirmed Hacker" type="Area2D" parent="."]
+position = Vector2(-6, -58)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Confirmed Hacker"]
+position = Vector2(134, 566.5)
+shape = SubResource("RectangleShape2D_7uivy")
+
+[node name="Confirmed Agent" type="Area2D" parent="."]
+position = Vector2(-5, -52)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Confirmed Agent"]
+position = Vector2(385.5, 558.5)
+shape = SubResource("RectangleShape2D_e2too")
+
+[node name="Uncertain" type="Area2D" parent="."]
+position = Vector2(-3, -53)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Uncertain"]
+position = Vector2(258, 460)
+shape = SubResource("RectangleShape2D_uwcjp")
 
 [node name="Tab1" type="Node2D" parent="."]
 
@@ -103,12 +71,6 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_aepph")
-
-[node name="TextureRect" type="TextureRect" parent="Tab1/Control"]
-layout_mode = 0
-offset_right = 520.0
-offset_bottom = 573.0
-texture = ExtResource("2_xenha")
 
 [node name="table" type="Control" parent="Tab1/Control"]
 layout_mode = 3
@@ -308,101 +270,74 @@ modulate = Color(0.458824, 0.486275, 0.52549, 1)
 position = Vector2(45.5, 33.5)
 texture = ExtResource("15_fg5e0")
 
-[node name="Confirmed Hacker" type="Area2D" parent="Tab1/Control"]
-position = Vector2(-6, -58)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Tab1/Control/Confirmed Hacker"]
-position = Vector2(134, 566.5)
-shape = SubResource("RectangleShape2D_7uivy")
-
-[node name="Confirmed Agent" type="Area2D" parent="Tab1/Control"]
-position = Vector2(-5, -52)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Tab1/Control/Confirmed Agent"]
-position = Vector2(385.5, 558.5)
-shape = SubResource("RectangleShape2D_e2too")
-
-[node name="Uncertain" type="Area2D" parent="Tab1/Control"]
-position = Vector2(-3, -53)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Tab1/Control/Uncertain"]
-position = Vector2(259.75, 458.5)
-shape = SubResource("RectangleShape2D_uwcjp")
-
 [node name="1" type="Area2D" parent="Tab1" groups=["cards1"]]
-position = Vector2(39, 384)
+position = Vector2(32, 385)
 script = ExtResource("7_yampo")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tab1/1"]
-position = Vector2(21.5, 21.5)
+position = Vector2(51, 12.5)
 shape = SubResource("RectangleShape2D_by85s")
 
-[node name="Button" type="Button" parent="Tab1/1"]
-process_mode = 4
-offset_right = 43.0
-offset_bottom = 43.0
-theme = ExtResource("10_tuv7c")
-icon = ExtResource("11_nl8vm")
+[node name="RichTextLabel" parent="Tab1/1" instance=ExtResource("12_wbu6h")]
+offset_left = 1.0
+offset_right = 101.0
+text = "[center]1  Braetonix[/center]"
 
 [node name="2" type="Area2D" parent="Tab1" groups=["cards1"]]
-position = Vector2(120, 390)
+position = Vector2(61, 404)
 script = ExtResource("7_yampo")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tab1/2"]
 position = Vector2(21.5, 21.5)
 shape = SubResource("RectangleShape2D_by85s")
 
-[node name="Button" type="Button" parent="Tab1/2"]
-process_mode = 4
-offset_right = 43.0
-offset_bottom = 43.0
-theme = ExtResource("10_tuv7c")
-icon = ExtResource("12_q3bg5")
+[node name="RichTextLabel" parent="Tab1/2" instance=ExtResource("12_wbu6h")]
+offset_left = -28.0
+offset_top = 9.0
+offset_right = 72.0
+offset_bottom = 34.0
 
 [node name="3" type="Area2D" parent="Tab1" groups=["cards1"]]
-position = Vector2(327, 395)
+position = Vector2(191, 370)
 script = ExtResource("7_yampo")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tab1/3"]
 position = Vector2(21.5, 21.5)
 shape = SubResource("RectangleShape2D_by85s")
 
-[node name="Button" type="Button" parent="Tab1/3"]
-process_mode = 4
-offset_right = 40.0
-offset_bottom = 40.0
-theme = ExtResource("10_tuv7c")
-icon = ExtResource("13_iqwhy")
+[node name="RichTextLabel2" parent="Tab1/3" instance=ExtResource("12_wbu6h")]
+offset_left = -29.0
+offset_top = 9.0
+offset_right = 71.0
+offset_bottom = 34.0
 
 [node name="4" type="Area2D" parent="Tab1" groups=["cards1"]]
-position = Vector2(378, 388)
+position = Vector2(379, 404)
 script = ExtResource("7_yampo")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tab1/4"]
 position = Vector2(21.5, 21.5)
 shape = SubResource("RectangleShape2D_by85s")
 
-[node name="Button" type="Button" parent="Tab1/4"]
-process_mode = 4
-offset_right = 40.0
-offset_bottom = 40.0
-theme = ExtResource("10_tuv7c")
-icon = ExtResource("14_ff3wo")
+[node name="RichTextLabel3" parent="Tab1/4" instance=ExtResource("12_wbu6h")]
+offset_left = -28.0
+offset_top = 9.0
+offset_right = 72.0
+offset_bottom = 34.0
 
 [node name="5" type="Area2D" parent="Tab1" groups=["cards1"]]
-position = Vector2(438, 394)
+position = Vector2(378, 374)
 script = ExtResource("7_yampo")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tab1/5"]
 position = Vector2(21.5, 21.5)
 shape = SubResource("RectangleShape2D_by85s")
 
-[node name="Button" type="Button" parent="Tab1/5"]
-process_mode = 4
-offset_right = 40.0
-offset_bottom = 40.0
-theme = ExtResource("10_tuv7c")
-icon = ExtResource("15_fg5e0")
+[node name="RichTextLabel4" parent="Tab1/5" instance=ExtResource("12_wbu6h")]
+offset_left = -28.0
+offset_top = 9.0
+offset_right = 72.0
+offset_bottom = 34.0
 
 [node name="Tab2" type="Node2D" parent="."]
 process_mode = 4
@@ -416,12 +351,6 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_aepph")
-
-[node name="TextureRect" type="TextureRect" parent="Tab2/Control"]
-layout_mode = 0
-offset_right = 520.0
-offset_bottom = 573.0
-texture = ExtResource("2_xenha")
 
 [node name="table" type="Control" parent="Tab2/Control"]
 layout_mode = 3
@@ -621,101 +550,73 @@ modulate = Color(0.458824, 0.486275, 0.52549, 1)
 position = Vector2(45.5, 33.5)
 texture = ExtResource("15_fg5e0")
 
-[node name="Confirmed Hacker" type="Area2D" parent="Tab2/Control"]
-position = Vector2(-4, -56)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Tab2/Control/Confirmed Hacker"]
-position = Vector2(134, 566.5)
-shape = SubResource("RectangleShape2D_j6c40")
-
-[node name="Confirmed Agent" type="Area2D" parent="Tab2/Control"]
-position = Vector2(-5, -52)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Tab2/Control/Confirmed Agent"]
-position = Vector2(385.5, 558.5)
-shape = SubResource("RectangleShape2D_ipe68")
-
-[node name="Uncertain" type="Area2D" parent="Tab2/Control"]
-position = Vector2(-3, -53)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Tab2/Control/Uncertain"]
-position = Vector2(259.75, 458.5)
-shape = SubResource("RectangleShape2D_qthxr")
-
 [node name="1" type="Area2D" parent="Tab2" groups=["cards2"]]
-position = Vector2(39, 384)
+position = Vector2(35, 384)
 script = ExtResource("7_yampo")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tab2/1"]
-position = Vector2(21.5, 21.5)
+position = Vector2(51, 12.5)
 shape = SubResource("RectangleShape2D_6f1mt")
 
-[node name="Button" type="Button" parent="Tab2/1"]
-process_mode = 4
-offset_right = 43.0
-offset_bottom = 43.0
-theme = ExtResource("10_tuv7c")
-icon = ExtResource("11_nl8vm")
+[node name="RichTextLabel" parent="Tab2/1" instance=ExtResource("12_wbu6h")]
+offset_left = 1.0
+offset_right = 101.0
 
 [node name="2" type="Area2D" parent="Tab2" groups=["cards2"]]
-position = Vector2(120, 390)
+position = Vector2(64, 403)
 script = ExtResource("7_yampo")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tab2/2"]
 position = Vector2(21.5, 21.5)
 shape = SubResource("RectangleShape2D_6f1mt")
 
-[node name="Button" type="Button" parent="Tab2/2"]
-process_mode = 4
-offset_right = 43.0
-offset_bottom = 43.0
-theme = ExtResource("10_tuv7c")
-icon = ExtResource("12_q3bg5")
+[node name="RichTextLabel" parent="Tab2/2" instance=ExtResource("12_wbu6h")]
+offset_left = -28.0
+offset_top = 9.0
+offset_right = 72.0
+offset_bottom = 34.0
 
 [node name="3" type="Area2D" parent="Tab2" groups=["cards2"]]
-position = Vector2(327, 395)
+position = Vector2(205, 366)
 script = ExtResource("7_yampo")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tab2/3"]
 position = Vector2(21.5, 21.5)
 shape = SubResource("RectangleShape2D_6f1mt")
 
-[node name="Button" type="Button" parent="Tab2/3"]
-process_mode = 4
-offset_right = 40.0
-offset_bottom = 40.0
-theme = ExtResource("10_tuv7c")
-icon = ExtResource("13_iqwhy")
+[node name="RichTextLabel2" parent="Tab2/3" instance=ExtResource("12_wbu6h")]
+offset_left = -28.0
+offset_top = 9.0
+offset_right = 72.0
+offset_bottom = 34.0
 
 [node name="4" type="Area2D" parent="Tab2" groups=["cards2"]]
-position = Vector2(378, 388)
+position = Vector2(359, 376)
 script = ExtResource("7_yampo")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tab2/4"]
 position = Vector2(21.5, 21.5)
 shape = SubResource("RectangleShape2D_6f1mt")
 
-[node name="Button" type="Button" parent="Tab2/4"]
-process_mode = 4
-offset_right = 40.0
-offset_bottom = 40.0
-theme = ExtResource("10_tuv7c")
-icon = ExtResource("14_ff3wo")
+[node name="RichTextLabel3" parent="Tab2/4" instance=ExtResource("12_wbu6h")]
+offset_left = -27.0
+offset_top = 9.0
+offset_right = 73.0
+offset_bottom = 34.0
 
 [node name="5" type="Area2D" parent="Tab2" groups=["cards2"]]
-position = Vector2(438, 394)
+position = Vector2(395, 402)
 script = ExtResource("7_yampo")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tab2/5"]
 position = Vector2(21.5, 21.5)
 shape = SubResource("RectangleShape2D_6f1mt")
 
-[node name="Button" type="Button" parent="Tab2/5"]
-process_mode = 4
-offset_right = 40.0
-offset_bottom = 40.0
-theme = ExtResource("10_tuv7c")
-icon = ExtResource("15_fg5e0")
+[node name="RichTextLabel4" parent="Tab2/5" instance=ExtResource("12_wbu6h")]
+offset_left = -28.0
+offset_top = 9.0
+offset_right = 72.0
+offset_bottom = 34.0
 
 [node name="original" type="Button" parent="."]
 offset_left = 30.0
@@ -739,41 +640,7 @@ offset_bottom = 30.0
 theme = ExtResource("4_bi0v6")
 text = "<"
 
-[node name="NotePad" type="Control" parent="."]
-process_mode = 4
-visible = false
-layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="TextureRect" type="TextureRect" parent="NotePad"]
-modulate = Color(1, 1, 1, 0.741176)
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-texture = ExtResource("15_552sl")
-
-[node name="TextEdit" type="TextEdit" parent="NotePad"]
-layout_mode = 0
-offset_left = 10.0
-offset_top = 39.0
-offset_right = 460.0
-offset_bottom = 539.0
-theme = SubResource("Theme_awbre")
-placeholder_text = "Write your thoughts here..."
-syntax_highlighter = SubResource("CodeHighlighter_ptmh0")
-
-[node name="Note" type="Button" parent="."]
-offset_left = 475.0
-offset_top = 40.0
-offset_right = 509.0
-offset_bottom = 74.0
-theme = SubResource("Theme_pvfsh")
-icon = ExtResource("15_uu077")
-icon_alignment = 1
-expand_icon = true
-script = ExtResource("17_b4aa5")
+[node name="Chat" parent="." instance=ExtResource("20_nu3c8")]
 
 [connection signal="pressed" from="Tab1/Control/table/12" to="Tab1/Control/table/12" method="_on_pressed"]
 [connection signal="pressed" from="Tab1/Control/table/23" to="Tab1/Control/table/23" method="_on_pressed"]
@@ -838,4 +705,5 @@ script = ExtResource("17_b4aa5")
 [connection signal="pressed" from="original" to="original" method="_on_pressed"]
 [connection signal="pressed" from="unoriginal" to="unoriginal" method="_on_pressed"]
 [connection signal="pressed" from="Button" to="." method="goBack"]
-[connection signal="pressed" from="Note" to="Note" method="_on_pressed"]
+
+[editable path="Chat"]

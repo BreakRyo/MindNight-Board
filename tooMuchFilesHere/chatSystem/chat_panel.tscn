@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://xufa0wteo6kv"]
+
+[node name="Panel" type="Panel"]
+offset_left = 16.0
+offset_top = 40.0
+offset_right = 466.0
+offset_bottom = 560.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 450.0
+offset_bottom = 520.0
+alignment = 2

@@ -18,6 +18,7 @@ public partial class scene2 : Control
 		}
 		var cards = GetTree().GetNodesInGroup("cards1");
 		((Area2D)cards[mypos-1]).Hide();
+		((Area2D)cards[mypos-1]).ProcessMode=ProcessModeEnum.Disabled;
 		
 
 	}

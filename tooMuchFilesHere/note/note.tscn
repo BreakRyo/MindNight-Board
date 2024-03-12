@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://dks314xngutt"]
+
+[ext_resource type="Theme" uid="uid://rj6y6pyc6bs3" path="res://tooMuchFilesHere/buttonThemeTool.tres" id="1_84upf"]
+[ext_resource type="Texture2D" uid="uid://o8i3xf33yhie" path="res://junk/note.png" id="2_x53v3"]
+[ext_resource type="Script" path="res://Note.cs" id="3_4joc3"]
+
+[node name="Note" type="Button"]
+offset_right = 34.0
+offset_bottom = 34.0
+theme = ExtResource("1_84upf")
+icon = ExtResource("2_x53v3")
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("3_4joc3")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

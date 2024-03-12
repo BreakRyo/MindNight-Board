@@ -1,0 +1,101 @@
+[gd_scene load_steps=13 format=3 uid="uid://bcqye8ab2uflg"]
+
+[ext_resource type="Script" path="res://tooMuchFilesHere/chatSystem/chat.cs" id="1_undsl"]
+[ext_resource type="Texture2D" uid="uid://ccuqybdfibfu5" path="res://junk/shadow.png" id="2_80pel"]
+[ext_resource type="Theme" uid="uid://rj6y6pyc6bs3" path="res://tooMuchFilesHere/buttonThemeTool.tres" id="3_6oq5q"]
+[ext_resource type="Texture2D" uid="uid://denrf1t6ya38g" path="res://tooMuchFilesHere/chatSystem/chat.png" id="3_j56v4"]
+[ext_resource type="StyleBox" uid="uid://crqo3fl1ddiul" path="res://tooMuchFilesHere/chatSystem/styleBox.tres" id="3_lua60"]
+[ext_resource type="Script" path="res://tooMuchFilesHere/chatSystem/ScrollContainer.cs" id="3_vl2bc"]
+[ext_resource type="PackedScene" uid="uid://m6704ng8ne81" path="res://tooMuchFilesHere/note/note_pad.tscn" id="4_dwtol"]
+[ext_resource type="Texture2D" uid="uid://cqwcf0dyibf6f" path="res://tooMuchFilesHere/chatSystem/arrow.png" id="5_601lf"]
+[ext_resource type="PackedScene" uid="uid://dks314xngutt" path="res://tooMuchFilesHere/note/note.tscn" id="7_mrtey"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7qd6t"]
+expand_margin_left = 2.0
+expand_margin_top = 2.0
+expand_margin_right = 2.0
+expand_margin_bottom = 2.0
+
+[sub_resource type="Theme" id="Theme_18y7d"]
+/styles/panel = SubResource("StyleBoxFlat_7qd6t")
+Panel/styles/panel = ExtResource("3_lua60")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5bj14"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_undsl")
+
+[node name="Control" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect" type="TextureRect" parent="Control"]
+layout_mode = 0
+offset_right = 520.0
+offset_bottom = 573.0
+texture = ExtResource("2_80pel")
+
+[node name="Panel1" type="Panel" parent="Control"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 40.0
+offset_right = 466.0
+offset_bottom = 560.0
+theme = SubResource("Theme_18y7d")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Control/Panel1"]
+layout_mode = 0
+offset_right = 450.0
+offset_bottom = 520.0
+horizontal_scroll_mode = 0
+script = ExtResource("3_vl2bc")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/Panel1/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+alignment = 2
+
+[node name="Button" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 226.0
+offset_top = 21.0
+offset_right = 256.0
+offset_bottom = 51.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_5bj14")
+icon = ExtResource("5_601lf")
+expand_icon = true
+
+[node name="NotePad" parent="." instance=ExtResource("4_dwtol")]
+visible = false
+
+[node name="chat" type="Button" parent="."]
+layout_mode = 0
+offset_left = 475.0
+offset_top = 88.0
+offset_right = 509.0
+offset_bottom = 122.0
+tooltip_text = "Chat"
+theme = ExtResource("3_6oq5q")
+icon = ExtResource("3_j56v4")
+expand_icon = true
+
+[node name="Note" parent="." instance=ExtResource("7_mrtey")]
+layout_mode = 0
+offset_left = 475.0
+offset_top = 47.0
+offset_right = 509.0
+offset_bottom = 81.0
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="pressed" from="Control/Button" to="Control/Panel1/ScrollContainer" method="scrollBottom"]
+[connection signal="pressed" from="chat" to="." method="_on_chat_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_timeout"]

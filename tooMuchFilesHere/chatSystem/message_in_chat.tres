@@ -1,0 +1,10 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://bdmcrp87nwbra"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vxqg6"]
+content_margin_left = 30.0
+content_margin_top = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[resource]
+RichTextLabel/styles/normal = SubResource("StyleBoxFlat_vxqg6")

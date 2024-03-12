@@ -1,24 +1,107 @@
-[gd_scene load_steps=11 format=3 uid="uid://nxejyyjm05wk"]
+[gd_scene load_steps=30 format=3 uid="uid://nxejyyjm05wk"]
 
 [ext_resource type="Script" path="res://scene1.cs" id="1_g2wkj"]
 [ext_resource type="FontFile" uid="uid://bc0oawvcxbr2i" path="res://junk/lunchds.ttf" id="2_350lh"]
 [ext_resource type="Texture2D" uid="uid://bhqkya2wyp2ca" path="res://junk/backgroundTopLeft-Home.png" id="2_rueyg"]
 [ext_resource type="FontFile" uid="uid://dyiqyukragyye" path="res://junk/Symtext.ttf" id="3_kn4rc"]
 [ext_resource type="Theme" uid="uid://cd37wv1dbj6gf" path="res://junk/themes/buttontheme.tres" id="4_cydcn"]
-[ext_resource type="Script" path="res://PlayerDetection.cs" id="6_2auc4"]
-[ext_resource type="Script" path="res://Positions.cs" id="6_dvflf"]
-[ext_resource type="Theme" uid="uid://r4plxl4jd41w" path="res://junk/themes/buttontheme1.tres" id="7_uw1em"]
+[ext_resource type="Texture2D" uid="uid://c67p74xs8tgyb" path="res://junk/loading/loading-export1.png" id="7_iankg"]
+[ext_resource type="Texture2D" uid="uid://l0ufesmsltod" path="res://junk/loading/loading-export2.png" id="8_h4yav"]
+[ext_resource type="Script" path="res://FetchForData.cs" id="9_1wsg8"]
+[ext_resource type="Texture2D" uid="uid://b0uov1mhx8lr2" path="res://junk/loading/loading-export3.png" id="9_38lx0"]
+[ext_resource type="Texture2D" uid="uid://m6m3ihoyt31x" path="res://junk/loading/loading-export4.png" id="10_q7thv"]
+[ext_resource type="Texture2D" uid="uid://dgjnhkueayrxy" path="res://junk/loading/loading-export5.png" id="11_qwpyd"]
+[ext_resource type="Texture2D" uid="uid://djto2ge05sjoc" path="res://junk/loading/loading-export6.png" id="12_17vbc"]
+[ext_resource type="Texture2D" uid="uid://c7ol5imrupy24" path="res://junk/loading/loading-export7.png" id="13_7v6eb"]
+[ext_resource type="Texture2D" uid="uid://bity8d6r6nyhd" path="res://junk/loading/loading-export8.png" id="14_nhd35"]
+[ext_resource type="Texture2D" uid="uid://c5sebae8c3i2d" path="res://junk/loading/loading-export9.png" id="15_fyx44"]
+[ext_resource type="Texture2D" uid="uid://boy32jxrniv76" path="res://junk/loading/loading-export10.png" id="16_jmfrj"]
+[ext_resource type="Texture2D" uid="uid://c5j50idjrc0e7" path="res://junk/loading/loading-export11.png" id="17_4e40p"]
+[ext_resource type="Texture2D" uid="uid://bjhlo1wlimrca" path="res://junk/loading/loading-export12.png" id="18_w8gde"]
+[ext_resource type="Texture2D" uid="uid://bp41g5tmd07pj" path="res://junk/loading/loading-export13.png" id="19_inoyf"]
+[ext_resource type="Texture2D" uid="uid://cxapsvf0quxju" path="res://junk/loading/loading-export14.png" id="20_diatr"]
+[ext_resource type="Texture2D" uid="uid://cvls1k8ebjo13" path="res://junk/loading/loading-export15.png" id="21_j7w4b"]
+[ext_resource type="Texture2D" uid="uid://bxn75oaph0bjq" path="res://junk/loading/loading-export16.png" id="22_6sety"]
+[ext_resource type="Texture2D" uid="uid://el0iqubk8bt2" path="res://junk/loading/loading-export17.png" id="23_2ck7b"]
+[ext_resource type="Texture2D" uid="uid://b4p81cupbja6v" path="res://junk/loading/loading-export18.png" id="24_ena3n"]
+[ext_resource type="Texture2D" uid="uid://bxmbljied3ek4" path="res://junk/loading/loading-export19.png" id="25_s44ew"]
+[ext_resource type="Texture2D" uid="uid://dtu6e72xh5rmv" path="res://junk/loading/loading-export20.png" id="26_phnyw"]
+[ext_resource type="Texture2D" uid="uid://kmnnirp128c6" path="res://junk/loading/loading-export21.png" id="27_3l1qd"]
+[ext_resource type="Texture2D" uid="uid://ckrt42qw7ajl" path="res://junk/loading/loading-export22.png" id="28_61fcm"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_asn1h"]
-bg_color = Color(0.0196078, 0.0352941, 0.0666667, 1)
-border_width_left = 1
-border_width_top = 1
-border_width_right = 1
-border_width_bottom = 1
-border_color = Color(0.129412, 0.203922, 0.305882, 1)
-
-[sub_resource type="Theme" id="Theme_in5lp"]
-Panel/styles/panel = SubResource("StyleBoxFlat_asn1h")
+[sub_resource type="SpriteFrames" id="SpriteFrames_bi38g"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_iankg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_h4yav")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_38lx0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_q7thv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_qwpyd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_17vbc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_7v6eb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_nhd35")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_fyx44")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_jmfrj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_4e40p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_w8gde")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_inoyf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_diatr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_j7w4b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_6sety")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_2ck7b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_ena3n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_s44ew")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_phnyw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_3l1qd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_61fcm")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -71,136 +154,19 @@ theme_override_fonts/font = ExtResource("2_350lh")
 theme_override_font_sizes/font_size = 41
 text = "Board"
 
-[node name="Panel" type="Panel" parent="."]
+[node name="Button" type="Button" parent="."]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -130.0
-offset_top = 61.5
-offset_right = 169.505
-offset_bottom = 233.76
+offset_left = -147.217
+offset_top = 191.325
+offset_right = 147.218
+offset_bottom = 215.325
 grow_horizontal = 2
 grow_vertical = 2
-theme = SubResource("Theme_in5lp")
-
-[node name="Label2" type="Label" parent="Panel"]
-layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -139.753
-offset_top = 7.99999
-offset_right = 71.2475
-offset_bottom = 32.0
-grow_horizontal = 2
-theme_override_colors/font_color = Color(0.129412, 0.203922, 0.305882, 1)
-theme_override_fonts/font = ExtResource("3_kn4rc")
-text = "Number Of Players ?"
-
-[node name="5P" type="Button" parent="Panel"]
-layout_mode = 0
-offset_left = 11.0
-offset_top = 35.0
-offset_right = 48.0
-offset_bottom = 72.0
-theme = ExtResource("4_cydcn")
-text = "5"
-script = ExtResource("6_2auc4")
-
-[node name="6P" type="Button" parent="Panel"]
-layout_mode = 0
-offset_left = 54.0
-offset_top = 35.0
-offset_right = 91.0
-offset_bottom = 72.0
-theme = ExtResource("7_uw1em")
-text = "6"
-script = ExtResource("6_2auc4")
-
-[node name="Label" type="Label" parent="Panel"]
-layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -137.753
-offset_top = 82.0
-offset_right = 17.2475
-offset_bottom = 106.0
-grow_horizontal = 2
-theme_override_colors/font_color = Color(0.129412, 0.203922, 0.305882, 1)
-theme_override_fonts/font = ExtResource("3_kn4rc")
-text = "your Position ?"
-
-[node name="1" type="Button" parent="Panel"]
-layout_mode = 0
-offset_left = 12.0
-offset_top = 114.0
-offset_right = 49.0
-offset_bottom = 151.0
-theme = ExtResource("7_uw1em")
-text = "1"
-script = ExtResource("6_dvflf")
-
-[node name="2" type="Button" parent="Panel"]
-layout_mode = 0
-offset_left = 57.0
-offset_top = 114.0
-offset_right = 94.0
-offset_bottom = 151.0
-theme = ExtResource("7_uw1em")
-text = "2"
-script = ExtResource("6_dvflf")
-
-[node name="3" type="Button" parent="Panel"]
-layout_mode = 0
-offset_left = 102.0
-offset_top = 114.0
-offset_right = 139.0
-offset_bottom = 151.0
-theme = ExtResource("7_uw1em")
-text = "3"
-script = ExtResource("6_dvflf")
-
-[node name="4" type="Button" parent="Panel"]
-layout_mode = 0
-offset_left = 147.0
-offset_top = 114.0
-offset_right = 184.0
-offset_bottom = 151.0
-theme = ExtResource("7_uw1em")
-text = "4"
-script = ExtResource("6_dvflf")
-
-[node name="5" type="Button" parent="Panel"]
-layout_mode = 0
-offset_left = 192.0
-offset_top = 114.0
-offset_right = 229.0
-offset_bottom = 151.0
-theme = ExtResource("7_uw1em")
-text = "5"
-script = ExtResource("6_dvflf")
-
-[node name="6" type="Button" parent="Panel"]
-visible = false
-layout_mode = 0
-offset_left = 241.0
-offset_top = 114.0
-offset_right = 278.0
-offset_bottom = 151.0
-theme = ExtResource("7_uw1em")
-text = "6"
-script = ExtResource("6_dvflf")
-
-[node name="Button" type="Button" parent="."]
-layout_mode = 0
-offset_left = 5.0
-offset_top = 542.0
-offset_right = 299.435
-offset_bottom = 566.0
 theme = ExtResource("4_cydcn")
 theme_override_colors/font_color = Color(0.858824, 0.211765, 0.227451, 1)
 theme_override_colors/font_hover_color = Color(0.858824, 0.211765, 0.227451, 1)
@@ -225,12 +191,64 @@ theme_override_colors/font_color = Color(0.0823529, 0.141176, 0.215686, 1)
 theme_override_fonts/font = ExtResource("3_kn4rc")
 text = "Made by WHY"
 
-[connection signal="pressed" from="Panel/5P" to="Panel/5P" method="_on_pressed"]
-[connection signal="pressed" from="Panel/6P" to="Panel/6P" method="_on_pressed"]
-[connection signal="pressed" from="Panel/1" to="Panel/1" method="positionSelection"]
-[connection signal="pressed" from="Panel/2" to="Panel/2" method="positionSelection"]
-[connection signal="pressed" from="Panel/3" to="Panel/3" method="positionSelection"]
-[connection signal="pressed" from="Panel/4" to="Panel/4" method="positionSelection"]
-[connection signal="pressed" from="Panel/5" to="Panel/5" method="positionSelection"]
-[connection signal="pressed" from="Panel/6" to="Panel/6" method="positionSelection"]
+[node name="Start" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -147.217
+offset_top = 120.105
+offset_right = 147.218
+offset_bottom = 182.27
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("4_cydcn")
+theme_override_font_sizes/font_size = 32
+text = "Start"
+script = ExtResource("9_1wsg8")
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -228.0
+offset_top = 261.5
+offset_right = 229.0
+offset_bottom = 281.205
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_kn4rc")
+theme_override_font_sizes/font_size = 12
+text = "Important : make sure you are already in-game before starting."
+
+[node name="Loading" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_right = 520.0
+offset_bottom = 573.0
+
+[node name="ColorRect" type="ColorRect" parent="Loading"]
+layout_mode = 0
+offset_right = 520.0
+offset_bottom = 573.0
+color = Color(0, 0, 0, 0.694118)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Loading"]
+position = Vector2(217, 311)
+scale = Vector2(0.4, 0.4)
+sprite_frames = SubResource("SpriteFrames_bi38g")
+autoplay = "default"
+frame = 5
+frame_progress = 0.730105
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 5.0
+
 [connection signal="pressed" from="Button" to="." method="goToTutorial"]
+[connection signal="pressed" from="Start" to="Start" method="_on_pressed"]
+[connection signal="timeout" from="Timer" to="Start" method="_on_timer_timeout"]

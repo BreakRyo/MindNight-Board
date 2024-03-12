@@ -13,7 +13,7 @@ MindNight Board is a board for the game mindnight where it helps you use the pos
 
 ## Installation
 
-[MindNight.Board.v1.1](https://github.com/BreakRyo/MindNight-Board/releases/tag/v.1.1)
+[MindNight.Board.v1.1](https://github.com/BreakRyo/MindNight-Board/releases/tag/v.1.2)
 
 ## Usage
 
@@ -22,11 +22,11 @@ MindNight Board is a board for the game mindnight where it helps you use the pos
 
 
 ## Screenshots
-
-![Home](https://raw.githubusercontent.com/BreakRyo/MindNight-Board/main/screenshots/Screenshot%202024-03-08%20162612.png)
-![Board](https://raw.githubusercontent.com/BreakRyo/MindNight-Board/main/screenshots/Screenshot%202024-03-08%20162707.png)
-![Board](https://raw.githubusercontent.com/BreakRyo/MindNight-Board/main/screenshots/Screenshot%202024-03-08%20163229.png)
-![Board](https://raw.githubusercontent.com/BreakRyo/MindNight-Board/main/screenshots/Screenshot%202024-03-08%20163306.png)
+Screenshot 2024-03-12 041421
+![Home](https://raw.githubusercontent.com/BreakRyo/MindNight-Board/main/screenshots/Screenshot%2024-03-12%20041421.png)
+![Board](https://raw.githubusercontent.com/BreakRyo/MindNight-Board/main/screenshots/Screenshot%2024-03-12%20041509.png)
+![Board](https://raw.githubusercontent.com/BreakRyo/MindNight-Board/main/screenshots/Screenshot%2024-03-12%20053738.png)
+![Board](https://raw.githubusercontent.com/BreakRyo/MindNight-Board/main/screenshots/Screenshot%2024-03-12%20054021.png)
 
 ## License
 

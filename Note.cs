@@ -12,7 +12,5 @@ public partial class Note : Button
     private void _on_pressed(){
 		n.Visible = !visi;
 		visi = !visi;
-		if(visi) n.ProcessMode = ProcessModeEnum.Inherit;
-		else n.ProcessMode = ProcessModeEnum.Disabled;
 	}
 }
