@@ -1,0 +1,44 @@
+[gd_scene load_steps=3 format=3 uid="uid://v5d7buvylqvn"]
+
+[ext_resource type="Script" path="res://tooMuchFilesHere/ProposerInfo/SystemInfo.cs" id="1_gsvwy"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sj11f"]
+bg_color = Color(0.0666667, 0.0666667, 0.0705882, 0.980392)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[node name="System" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_gsvwy")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 40.0
+offset_right = 469.0
+offset_bottom = 560.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_sj11f")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Panel"]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 3.0
+offset_right = 463.0
+offset_bottom = 523.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 3

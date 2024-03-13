@@ -20,9 +20,9 @@ texture = ExtResource("1_325ks")
 
 [node name="TextEdit" type="TextEdit" parent="."]
 layout_mode = 0
-offset_left = 16.0
+offset_left = 9.0
 offset_top = 40.0
-offset_right = 466.0
+offset_right = 469.0
 offset_bottom = 560.0
 theme = ExtResource("2_vfg5r")
 placeholder_text = "Write your thoughts here..."

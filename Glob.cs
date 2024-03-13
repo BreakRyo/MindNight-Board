@@ -16,8 +16,10 @@ public partial class Glob : Node
 		"Received GameFound packet:", // PlayerNumber : int
 		"Received SpawnPlayer packet:", // Slot : int (where IsLocal==true), Color : int, Username : string
 	};
-	public List<PlayerData> players = new List<PlayerData>();
 
+	public List<PlayerData> players = new List<PlayerData>();
+	public List<string> playerNames = new List<string>();
+	public List<SystemBlock> systemMessages = new List<SystemBlock>();
 
 	// c data
 	string[] colors = {"#00A6F6","#D31FD4","#6FE015","#9D9D9D","#FF8113","#FFEC16","#00B48B","#0041F6"};
@@ -76,6 +78,7 @@ public partial class Glob : Node
 						// [center][color=#00A6F6]1 : name[/color][/center]
 						IsLocal = root.GetProperty("IsLocal").GetBoolean()
 					};
+					playerNames.Add("[color="+ colors[root.GetProperty("Color").GetInt32()] +"]"+ root.GetProperty("Username").GetString() + "[/color]");
 					if(newPlayer.IsLocal) myPosition = players.Count()+1;
 						
 					players.Add(newPlayer);

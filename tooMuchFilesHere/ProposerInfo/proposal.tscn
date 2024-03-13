@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://b5ayjo8tdi1rt"]
+
+[ext_resource type="FontFile" uid="uid://dgipriqfmli1e" path="res://junk/Pixter Display.ttf" id="1_5cy5r"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vrcyj"]
+content_margin_top = 7.0
+bg_color = Color(0.109804, 0.109804, 0.109804, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[node name="Proposal" type="RichTextLabel"]
+offset_left = 3.0
+offset_top = 3.0
+offset_right = 102.75
+offset_bottom = 37.0
+theme_override_fonts/normal_font = ExtResource("1_5cy5r")
+theme_override_styles/normal = SubResource("StyleBoxFlat_vrcyj")
+bbcode_enabled = true
+text = "[center][color=#00A6F6]Braetonix[/color] [/center]"

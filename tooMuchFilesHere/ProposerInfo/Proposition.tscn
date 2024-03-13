@@ -1,0 +1,185 @@
+[gd_scene load_steps=12 format=3 uid="uid://o0wra5x7p1k"]
+
+[ext_resource type="StyleBox" uid="uid://l0co724lgg6i" path="res://tooMuchFilesHere/ProposerInfo/new_style_box_flat.tres" id="1_ubd37"]
+[ext_resource type="FontFile" uid="uid://dgipriqfmli1e" path="res://junk/Pixter Display.ttf" id="2_2bv4g"]
+[ext_resource type="StyleBox" uid="uid://duena3owb4utk" path="res://tooMuchFilesHere/ProposerInfo/normalAccRefPanelLook.tres" id="3_usueu"]
+[ext_resource type="FontFile" uid="uid://dyiqyukragyye" path="res://junk/Symtext.ttf" id="4_phlrn"]
+[ext_resource type="Theme" uid="uid://bydbp3b7ac8nk" path="res://tooMuchFilesHere/ProposerInfo/PropositionNormal.tres" id="5_3i2r0"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_11wpl"]
+bg_color = Color(0.152941, 0.152941, 0.152941, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="Theme" id="Theme_xj3be"]
+Label/styles/normal = ExtResource("1_ubd37")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vrcyj"]
+content_margin_top = 7.0
+bg_color = Color(0.109804, 0.109804, 0.109804, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_skuv5"]
+content_margin_top = 9.0
+bg_color = Color(0.109804, 0.109804, 0.109804, 0)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qdrsb"]
+content_margin_top = 9.0
+bg_color = Color(0.109804, 0.109804, 0.109804, 0)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dn8aj"]
+content_margin_top = 7.0
+bg_color = Color(0.109804, 0.109804, 0.109804, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[node name="Control" type="Control"]
+custom_minimum_size = Vector2(454, 77)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="PropositionPanel" type="Panel" parent="."]
+clip_contents = true
+layout_mode = 0
+offset_right = 454.0
+offset_bottom = 77.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_11wpl")
+
+[node name="RoundNumber" type="Label" parent="PropositionPanel"]
+layout_mode = 0
+offset_left = 399.0
+offset_top = 3.0
+offset_right = 451.0
+offset_bottom = 74.0
+theme = SubResource("Theme_xj3be")
+theme_override_fonts/font = ExtResource("2_2bv4g")
+theme_override_font_sizes/font_size = 19
+text = "1/2"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Proposal" type="RichTextLabel" parent="PropositionPanel"]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 3.0
+offset_right = 102.75
+offset_bottom = 37.0
+tooltip_text = "Proposer"
+theme_override_fonts/normal_font = ExtResource("2_2bv4g")
+theme_override_styles/normal = SubResource("StyleBoxFlat_vrcyj")
+bbcode_enabled = true
+text = "[center][color=#00A6F6]Braetonix[/color] [/center]"
+
+[node name="Propose" type="RichTextLabel" parent="PropositionPanel"]
+layout_mode = 0
+offset_left = 105.75
+offset_top = 3.0
+offset_right = 396.0
+offset_bottom = 37.0
+tooltip_text = "Proposed"
+theme_override_fonts/normal_font = ExtResource("2_2bv4g")
+theme_override_styles/normal = SubResource("StyleBoxFlat_vrcyj")
+bbcode_enabled = true
+text = "[center][color=#00A6F6]Braetonix[/color], [color=#D31FD4]Situ[/color], [color=#FFEC16]Morty[/color] [/center]"
+
+[node name="Acc2" type="Panel" parent="PropositionPanel"]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 40.0
+offset_right = 198.0
+offset_bottom = 74.0
+theme_override_styles/panel = ExtResource("3_usueu")
+
+[node name="accepted" type="Label" parent="PropositionPanel"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 27.0
+offset_right = 86.0
+offset_bottom = 81.0
+theme_override_colors/font_color = Color(0.137255, 0.137255, 0.137255, 1)
+theme_override_fonts/font = ExtResource("4_phlrn")
+theme_override_font_sizes/font_size = 36
+text = "acc"
+
+[node name="Acc" type="RichTextLabel" parent="PropositionPanel"]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 40.0
+offset_right = 199.5
+offset_bottom = 74.0
+tooltip_text = "Players who accepted"
+theme_override_fonts/normal_font = ExtResource("2_2bv4g")
+theme_override_font_sizes/normal_font_size = 14
+theme_override_styles/normal = SubResource("StyleBoxFlat_skuv5")
+bbcode_enabled = true
+text = "[center][color=#00A6F6]Braetonix[/color], [color=#D31FD4]Situ[/color], [color=#FFEC16]Morty[/color] [/center]"
+
+[node name="Ref2" type="Panel" parent="PropositionPanel"]
+layout_mode = 0
+offset_left = 201.0
+offset_top = 40.0
+offset_right = 396.0
+offset_bottom = 74.0
+theme_override_styles/panel = ExtResource("3_usueu")
+
+[node name="refused" type="Label" parent="PropositionPanel"]
+layout_mode = 0
+offset_left = 205.0
+offset_top = 27.0
+offset_right = 283.0
+offset_bottom = 81.0
+theme_override_colors/font_color = Color(0.137255, 0.137255, 0.137255, 1)
+theme_override_fonts/font = ExtResource("4_phlrn")
+theme_override_font_sizes/font_size = 36
+text = "ref"
+
+[node name="Ref" type="RichTextLabel" parent="PropositionPanel"]
+layout_mode = 0
+offset_left = 199.5
+offset_top = 40.0
+offset_right = 396.0
+offset_bottom = 74.0
+tooltip_text = "Players who refused"
+theme_override_fonts/normal_font = ExtResource("2_2bv4g")
+theme_override_font_sizes/normal_font_size = 14
+theme_override_styles/normal = SubResource("StyleBoxFlat_qdrsb")
+bbcode_enabled = true
+text = "[center][color=#00A6F6]Braetonix[/color], [color=#D31FD4]Situ[/color], [color=#FFEC16]Morty[/color] [/center]"
+
+[node name="optional" type="RichTextLabel" parent="PropositionPanel"]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 77.0
+offset_right = 396.0
+offset_bottom = 111.0
+theme = ExtResource("5_3i2r0")
+theme_override_fonts/normal_font = ExtResource("2_2bv4g")
+bbcode_enabled = true
+text = "[center][color=#5dcd50]Secured[/color]/  [/center]"
+
+[node name="node" type="Label" parent="PropositionPanel"]
+layout_mode = 0
+offset_left = 399.0
+offset_top = 77.0
+offset_right = 451.0
+offset_bottom = 111.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_dn8aj")
+text = "N1"
+horizontal_alignment = 1

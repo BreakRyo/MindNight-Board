@@ -27,8 +27,8 @@ Glob="*res://Glob.cs"
 
 window/size/viewport_width=520
 window/size/viewport_height=573
-window/size/resizable=false
 window/size/always_on_top=true
+window/stretch/mode="canvas_items"
 
 [dotnet]
 

@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://damjms8mraveh"]
+
+[ext_resource type="StyleBox" uid="uid://l0co724lgg6i" path="res://tooMuchFilesHere/ProposerInfo/new_style_box_flat.tres" id="1_vj8v0"]
+[ext_resource type="FontFile" uid="uid://dgipriqfmli1e" path="res://junk/Pixter Display.ttf" id="2_re3ji"]
+
+[sub_resource type="Theme" id="Theme_xj3be"]
+Label/styles/normal = ExtResource("1_vj8v0")
+
+[node name="RoundNumber" type="Label"]
+offset_left = 399.0
+offset_top = 3.0
+offset_right = 451.0
+offset_bottom = 37.0
+theme = SubResource("Theme_xj3be")
+theme_override_fonts/font = ExtResource("2_re3ji")
+theme_override_font_sizes/font_size = 19
+text = "1/2"
+horizontal_alignment = 1
+vertical_alignment = 1

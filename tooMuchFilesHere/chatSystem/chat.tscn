@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://bcqye8ab2uflg"]
+[gd_scene load_steps=16 format=3 uid="uid://bcqye8ab2uflg"]
 
 [ext_resource type="Script" path="res://tooMuchFilesHere/chatSystem/chat.cs" id="1_undsl"]
 [ext_resource type="Texture2D" uid="uid://ccuqybdfibfu5" path="res://junk/shadow.png" id="2_80pel"]
@@ -8,7 +8,10 @@
 [ext_resource type="Script" path="res://tooMuchFilesHere/chatSystem/ScrollContainer.cs" id="3_vl2bc"]
 [ext_resource type="PackedScene" uid="uid://m6704ng8ne81" path="res://tooMuchFilesHere/note/note_pad.tscn" id="4_dwtol"]
 [ext_resource type="Texture2D" uid="uid://cqwcf0dyibf6f" path="res://tooMuchFilesHere/chatSystem/arrow.png" id="5_601lf"]
+[ext_resource type="PackedScene" uid="uid://v5d7buvylqvn" path="res://tooMuchFilesHere/ProposerInfo/System.tscn" id="7_4gnew"]
 [ext_resource type="PackedScene" uid="uid://dks314xngutt" path="res://tooMuchFilesHere/note/note.tscn" id="7_mrtey"]
+[ext_resource type="Texture2D" uid="uid://cfe0yanffchcv" path="res://junk/note1.png" id="10_holsj"]
+[ext_resource type="Texture2D" uid="uid://cikpri06l7lqc" path="res://tooMuchFilesHere/ProposerInfo/propIcon.png" id="11_vpb0e"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7qd6t"]
 expand_margin_left = 2.0
@@ -45,9 +48,9 @@ texture = ExtResource("2_80pel")
 
 [node name="Panel1" type="Panel" parent="Control"]
 layout_mode = 0
-offset_left = 16.0
+offset_left = 9.0
 offset_top = 40.0
-offset_right = 466.0
+offset_right = 469.0
 offset_bottom = 560.0
 theme = SubResource("Theme_18y7d")
 
@@ -65,13 +68,17 @@ alignment = 2
 
 [node name="Button" type="Button" parent="Control"]
 layout_mode = 0
-offset_left = 226.0
+offset_left = 214.635
 offset_top = 21.0
-offset_right = 256.0
+offset_right = 244.635
 offset_bottom = 51.0
 theme_override_styles/focus = SubResource("StyleBoxEmpty_5bj14")
 icon = ExtResource("5_601lf")
 expand_icon = true
+
+[node name="System" parent="." instance=ExtResource("7_4gnew")]
+visible = false
+layout_mode = 1
 
 [node name="NotePad" parent="." instance=ExtResource("4_dwtol")]
 visible = false
@@ -93,9 +100,24 @@ offset_left = 475.0
 offset_top = 47.0
 offset_right = 509.0
 offset_bottom = 81.0
+tooltip_text = "Note"
+icon = ExtResource("10_holsj")
+
+[node name="Prop" type="Button" parent="."]
+layout_mode = 0
+offset_left = 476.0
+offset_top = 129.0
+offset_right = 510.0
+offset_bottom = 163.0
+tooltip_text = "System Messages"
+theme = ExtResource("3_6oq5q")
+icon = ExtResource("11_vpb0e")
+expand_icon = true
 
 [node name="Timer" type="Timer" parent="."]
 
+[connection signal="sendToSystem" from="." to="System" method="newSystemMessage"]
 [connection signal="pressed" from="Control/Button" to="Control/Panel1/ScrollContainer" method="scrollBottom"]
 [connection signal="pressed" from="chat" to="." method="_on_chat_pressed"]
+[connection signal="pressed" from="Prop" to="." method="_on_prop_pressed"]
 [connection signal="timeout" from="Timer" to="." method="_on_timeout"]
