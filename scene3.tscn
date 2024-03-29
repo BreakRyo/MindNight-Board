@@ -861,7 +861,7 @@ text = "<"
 
 [node name="Chat" parent="." instance=ExtResource("20_to7n6")]
 
-[node name="Note" parent="Chat" index="3"]
+[node name="Note" parent="Chat" index="4"]
 offset_top = 49.0
 offset_bottom = 83.0
 

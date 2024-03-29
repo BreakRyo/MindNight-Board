@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://v5d7buvylqvn"]
+[gd_scene load_steps=4 format=3 uid="uid://v5d7buvylqvn"]
 
 [ext_resource type="Script" path="res://tooMuchFilesHere/ProposerInfo/SystemInfo.cs" id="1_gsvwy"]
+[ext_resource type="PackedScene" uid="uid://cssujuw2fcn4d" path="res://tooMuchFilesHere/texture_rect.tscn" id="2_351rv"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sj11f"]
 bg_color = Color(0.0666667, 0.0666667, 0.0705882, 0.980392)
@@ -21,6 +22,9 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_gsvwy")
+
+[node name="TextureRect" parent="." instance=ExtResource("2_351rv")]
+layout_mode = 0
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 0

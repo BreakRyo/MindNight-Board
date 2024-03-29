@@ -1,0 +1,11 @@
+[gd_resource type="Theme" load_steps=3 format=3 uid="uid://dukar0sbhrr2i"]
+
+[ext_resource type="FontFile" uid="uid://dgipriqfmli1e" path="res://junk/Pixter Display.ttf" id="1_rp45b"]
+[ext_resource type="StyleBox" uid="uid://beemud0kewrf6" path="res://tooMuchFilesHere/chatSystem/OptionButton.tres" id="2_6skly"]
+
+[resource]
+OptionButton/fonts/font = ExtResource("1_rp45b")
+OptionButton/styles/focus = ExtResource("2_6skly")
+OptionButton/styles/hover = ExtResource("2_6skly")
+OptionButton/styles/normal = ExtResource("2_6skly")
+OptionButton/styles/pressed = ExtResource("2_6skly")

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://hvebmmp8dyqt"
-path="res://.godot/imported/pin.png-34f6c8b23c450c9c28363d7871c3937e.ctex"
+uid="uid://cs4hq74a031eo"
+path="res://.godot/imported/settings.png-29fa9f64884049af56e7b3d3d487ca51.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tooMuchFilesHere/chatSystem/pin.png"
-dest_files=["res://.godot/imported/pin.png-34f6c8b23c450c9c28363d7871c3937e.ctex"]
+source_file="res://junk/settings.png"
+dest_files=["res://.godot/imported/settings.png-29fa9f64884049af56e7b3d3d487ca51.ctex"]
 
 [params]
 

@@ -1,0 +1,178 @@
+[gd_scene load_steps=14 format=3 uid="uid://3xmrfjh44i50"]
+
+[ext_resource type="Script" path="res://tooMuchFilesHere/vision/vision.cs" id="1_jcrnl"]
+[ext_resource type="PackedScene" uid="uid://cssujuw2fcn4d" path="res://tooMuchFilesHere/texture_rect.tscn" id="2_8bgjg"]
+[ext_resource type="FontFile" uid="uid://dgipriqfmli1e" path="res://junk/Pixter Display.ttf" id="3_fveer"]
+[ext_resource type="StyleBox" uid="uid://0u7rfio6gl6p" path="res://tooMuchFilesHere/vision/setT.tres" id="3_p6a1v"]
+[ext_resource type="StyleBox" uid="uid://beemud0kewrf6" path="res://tooMuchFilesHere/chatSystem/OptionButton.tres" id="5_ls22j"]
+[ext_resource type="FontFile" uid="uid://dyiqyukragyye" path="res://junk/Symtext.ttf" id="7_a7n1a"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jj62x"]
+bg_color = Color(0.0745098, 0.0784314, 0.0862745, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7pam0"]
+content_margin_top = 8.0
+bg_color = Color(0.0745098, 0.0784314, 0.0862745, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+
+[sub_resource type="Theme" id="Theme_5smfs"]
+OptionButton/fonts/font = ExtResource("3_fveer")
+OptionButton/styles/focus = ExtResource("5_ls22j")
+OptionButton/styles/hover = ExtResource("5_ls22j")
+OptionButton/styles/normal = ExtResource("5_ls22j")
+OptionButton/styles/pressed = ExtResource("5_ls22j")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e0fj7"]
+content_margin_top = 7.0
+bg_color = Color(0.0745098, 0.0784314, 0.0862745, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="Theme" id="Theme_8jkye"]
+RichTextLabel/styles/normal = SubResource("StyleBoxFlat_e0fj7")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7slxl"]
+content_margin_top = 7.0
+bg_color = Color(0.0745098, 0.0784314, 0.0862745, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="Theme" id="Theme_b1sr7"]
+RichTextLabel/styles/normal = SubResource("StyleBoxFlat_7slxl")
+
+[node name="Vision" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_jcrnl")
+
+[node name="TextureRect" parent="." instance=ExtResource("2_8bgjg")]
+layout_mode = 0
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 40.0
+offset_right = 469.0
+offset_bottom = 560.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_jj62x")
+
+[node name="Panel2" type="Panel" parent="Panel"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 65.83
+offset_right = 452.0
+offset_bottom = 193.075
+theme_override_styles/panel = ExtResource("3_p6a1v")
+
+[node name="Panel" type="Panel" parent="Panel"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 232.405
+offset_right = 452.0
+offset_bottom = 232.405
+theme_override_styles/panel = SubResource("StyleBoxFlat_7pam0")
+
+[node name="HBoxContainer" type="VBoxContainer" parent="Panel/Panel"]
+custom_minimum_size = Vector2(444, 0)
+layout_mode = 0
+offset_top = -9.965
+offset_right = 444.0
+offset_bottom = -9.965
+alignment = 1
+
+[node name="OptionButton" type="OptionButton" parent="Panel"]
+custom_minimum_size = Vector2(120, 25)
+layout_mode = 0
+offset_left = 94.0
+offset_top = 48.0
+offset_right = 439.24
+offset_bottom = 87.0
+theme = SubResource("Theme_5smfs")
+alignment = 1
+
+[node name="Label" type="RichTextLabel" parent="Panel"]
+custom_minimum_size = Vector2(39, 39)
+layout_mode = 0
+offset_left = 19.0
+offset_top = 48.0
+offset_right = 88.665
+offset_bottom = 87.0
+tooltip_text = "Player's Position"
+theme_override_fonts/normal_font = ExtResource("3_fveer")
+theme_override_font_sizes/normal_font_size = 24
+theme_override_styles/normal = ExtResource("3_p6a1v")
+bbcode_enabled = true
+text = "1"
+
+[node name="PossibleHackers" type="RichTextLabel" parent="Panel"]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 93.0
+offset_right = 439.49
+offset_bottom = 133.0
+tooltip_text = "Possible Hackers For Me"
+theme = SubResource("Theme_8jkye")
+theme_override_fonts/normal_font = ExtResource("3_fveer")
+bbcode_enabled = true
+
+[node name="PossibleAgents" type="RichTextLabel" parent="Panel"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 139.0
+offset_right = 438.49
+offset_bottom = 179.0
+tooltip_text = "Confirmed Agents For Me."
+theme = SubResource("Theme_b1sr7")
+theme_override_fonts/normal_font = ExtResource("3_fveer")
+bbcode_enabled = true
+
+[node name="Label2" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 159.0
+offset_top = 19.0
+offset_right = 452.0
+offset_bottom = 43.0
+theme_override_fonts/font = ExtResource("7_a7n1a")
+text = "Combination Of Each Player"
+
+[node name="Label3" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 173.0
+offset_top = 195.0
+offset_right = 466.0
+offset_bottom = 219.0
+theme_override_fonts/font = ExtResource("7_a7n1a")
+text = "Chances of Being a hacker"
+
+[connection signal="item_selected" from="Panel/OptionButton" to="." method="setNewProfile"]

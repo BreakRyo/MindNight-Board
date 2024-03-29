@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=3 uid="uid://nxejyyjm05wk"]
+[gd_scene load_steps=31 format=3 uid="uid://nxejyyjm05wk"]
 
 [ext_resource type="Script" path="res://scene1.cs" id="1_g2wkj"]
 [ext_resource type="FontFile" uid="uid://bc0oawvcxbr2i" path="res://junk/lunchds.ttf" id="2_350lh"]
@@ -28,6 +28,7 @@
 [ext_resource type="Texture2D" uid="uid://dtu6e72xh5rmv" path="res://junk/loading/loading-export20.png" id="26_phnyw"]
 [ext_resource type="Texture2D" uid="uid://kmnnirp128c6" path="res://junk/loading/loading-export21.png" id="27_3l1qd"]
 [ext_resource type="Texture2D" uid="uid://ckrt42qw7ajl" path="res://junk/loading/loading-export22.png" id="28_61fcm"]
+[ext_resource type="FontFile" uid="uid://dgipriqfmli1e" path="res://junk/Pixter Display.ttf" id="29_fdv3i"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_bi38g"]
 animations = [{
@@ -189,7 +190,7 @@ grow_horizontal = 0
 grow_vertical = 0
 theme_override_colors/font_color = Color(0.0823529, 0.141176, 0.215686, 1)
 theme_override_fonts/font = ExtResource("3_kn4rc")
-text = "Made by WHY"
+text = "Made by Y"
 
 [node name="Start" type="Button" parent="."]
 layout_mode = 1
@@ -248,6 +249,18 @@ frame_progress = 0.730105
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 5.0
+
+[node name="Label3" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 457.0
+offset_top = 4.0
+offset_right = 512.0
+offset_bottom = 27.0
+tooltip_text = "@nik3091
+@deletboi.exe
+@.irm"
+theme_override_fonts/normal_font = ExtResource("29_fdv3i")
+text = "Credits"
 
 [connection signal="pressed" from="Button" to="." method="goToTutorial"]
 [connection signal="pressed" from="Start" to="Start" method="_on_pressed"]

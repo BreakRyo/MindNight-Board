@@ -13,7 +13,7 @@ MindNight Board is a board for the game mindnight where it helps you use the pos
 
 ## Installation
 
-[MindNight.Board.v1.3](https://github.com/BreakRyo/MindNight-Board/releases/tag/v.1.3)
+[MindNight.Board.v1.4](https://github.com/BreakRyo/MindNight-Board/releases/tag/v.1.4)
 
 ## Usage
 
@@ -27,6 +27,7 @@ MindNight Board is a board for the game mindnight where it helps you use the pos
 ![Board](https://raw.githubusercontent.com/BreakRyo/MindNight-Board/main/screenshots/Screenshot%202024-03-12%20053738.png)
 ![Board](https://raw.githubusercontent.com/BreakRyo/MindNight-Board/main/screenshots/Screenshot%202024-03-12%20054021.png)
 ![Board](https://raw.githubusercontent.com/BreakRyo/MindNight-Board/main/screenshots/Screenshot%202024-03-13%20165323.png)
+![Board](https://raw.githubusercontent.com/BreakRyo/MindNight-Board/main/screenshots/Screenshot%202024-03-29%20023458.png)
 
 ## License
 

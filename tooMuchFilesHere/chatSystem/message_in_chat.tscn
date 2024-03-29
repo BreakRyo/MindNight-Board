@@ -3,7 +3,7 @@
 [ext_resource type="FontFile" uid="uid://dgipriqfmli1e" path="res://junk/Pixter Display.ttf" id="1_8v5tf"]
 [ext_resource type="Theme" uid="uid://bdmcrp87nwbra" path="res://tooMuchFilesHere/chatSystem/message_in_chat.tres" id="1_utnqq"]
 [ext_resource type="Script" path="res://tooMuchFilesHere/chatSystem/MessageInChat.cs" id="2_8h8m4"]
-[ext_resource type="Texture2D" uid="uid://cnxw3pdiphkly" path="res://tooMuchFilesHere/chatSystem/pin.png" id="4_jx4rd"]
+[ext_resource type="Texture2D" uid="uid://hvebmmp8dyqt" path="res://tooMuchFilesHere/chatSystem/pin.png" id="4_jx4rd"]
 [ext_resource type="Texture2D" uid="uid://c2q55ndg68246" path="res://tooMuchFilesHere/chatSystem/unpin.png" id="5_hbjch"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_57opi"]
@@ -23,6 +23,8 @@ bbcode_enabled = true
 text = "[player]: hello."
 fit_content = true
 script = ExtResource("2_8h8m4")
+metadata/Player = 0
+metadata/Pinned = false
 
 [node name="checkBox" type="CheckBox" parent="."]
 layout_mode = 2

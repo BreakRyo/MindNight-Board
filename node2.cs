@@ -1,11 +1,15 @@
-using Godot;
 using System;
+using Godot;
 
 public partial class node2 : Node2D
 {
-	// Called when the node enters the scene tree for the first time.
+    public override void _Ready()
+    {
+        GetNode<Glob>("/root/Glob").connect();
+    }
 
-	private void goBack(){
-		GetTree().ChangeSceneToFile("res://scene1.tscn");
-	}
+    private void goBack()
+    {
+        GetTree().ChangeSceneToFile("res://scene1.tscn");
+    }
 }
